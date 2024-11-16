@@ -1,0 +1,1 @@
+/home/ani/yc_ws/src/my_pkg/scripts/mine/__init__.py

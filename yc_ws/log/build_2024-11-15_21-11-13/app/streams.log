@@ -1,0 +1,20 @@
+[0.563s] Invoking command in '/home/ani/yc_ws/build/app': PYTHONPATH=/home/ani/yc_ws/build/app/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/app/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/app/build --no-deps symlink_data
+[0.717s] running develop
+[0.717s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.717s]   warnings.warn(
+[0.793s] running egg_info
+[0.793s] writing app.egg-info/PKG-INFO
+[0.793s] writing dependency_links to app.egg-info/dependency_links.txt
+[0.793s] writing entry points to app.egg-info/entry_points.txt
+[0.793s] writing requirements to app.egg-info/requires.txt
+[0.793s] writing top-level names to app.egg-info/top_level.txt
+[0.795s] reading manifest file 'app.egg-info/SOURCES.txt'
+[0.795s] writing manifest file 'app.egg-info/SOURCES.txt'
+[0.796s] running build_ext
+[0.796s] Creating /home/ani/yc_ws/install/app/lib/python3.10/site-packages/app.egg-link (link to .)
+[0.797s] Installing coordinator script to /home/ani/yc_ws/install/app/lib/app
+[0.797s] Installing grasp_detection script to /home/ani/yc_ws/install/app/lib/app
+[0.797s] 
+[0.797s] Installed /home/ani/yc_ws/build/app
+[0.797s] running symlink_data
+[0.815s] Invoked command in '/home/ani/yc_ws/build/app' returned '0': PYTHONPATH=/home/ani/yc_ws/build/app/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/app/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/app/build --no-deps symlink_data

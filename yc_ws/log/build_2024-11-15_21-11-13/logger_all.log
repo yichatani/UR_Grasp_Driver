@@ -1,0 +1,756 @@
+[0.061s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.061s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7c758cb8cbe0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c758cb8c0d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c758cb8c0d0>>)
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.148s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ani/yc_ws'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/app) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/app' with type 'ros.ament_python' and name 'app'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/app2) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/app2' with type 'ros.ament_python' and name 'app2'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/captured_images2) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/data) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_controllers) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gripper/robotiq_controllers' with type 'ros.ament_cmake' and name 'robotiq_controllers'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_description) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gripper/robotiq_description' with type 'ros.ament_cmake' and name 'robotiq_description'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_driver) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gripper/robotiq_driver' with type 'ros.ament_cmake' and name 'robotiq_driver'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper/robotiq_hardware_tests) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gripper/robotiq_hardware_tests' with type 'ros.ament_cmake' and name 'robotiq_hardware_tests'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_pkg) by extension 'ros'
+[0.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_pkg' with type 'ros.ament_cmake' and name 'my_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_ur_driver' with type 'ros.ament_cmake' and name 'my_ur_driver'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_calibration' with type 'ros.ament_cmake' and name 'ur_calibration'
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.181s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.181s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ani/yc_ws/install/ur_calibration' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.182s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ani/yc_ws/install/robotiq_hardware_tests' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.182s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ani/yc_ws/install/robotiq_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.182s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/ani/yc_ws/install
+[0.183s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 339 installed packages in /opt/ros/humble
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'cmake_target' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'cmake_clean_cache' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'cmake_clean_first' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'cmake_force_configure' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'ament_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'catkin_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.219s] DEBUG:colcon.colcon_core.verb:Building package 'app' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/app', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/app', 'merge_install': False, 'path': '/home/ani/yc_ws/src/app', 'symlink_install': True, 'test_result_base': None}
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'cmake_target' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'cmake_clean_first' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'cmake_force_configure' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'ament_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'app2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.219s] DEBUG:colcon.colcon_core.verb:Building package 'app2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/app2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/app2', 'merge_install': False, 'path': '/home/ani/yc_ws/src/app2', 'symlink_install': True, 'test_result_base': None}
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'cmake_target' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'my_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.219s] DEBUG:colcon.colcon_core.verb:Building package 'my_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/my_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/my_pkg', 'merge_install': False, 'path': '/home/ani/yc_ws/src/my_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_target' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.220s] DEBUG:colcon.colcon_core.verb:Building package 'my_ur_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/my_ur_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/my_ur_driver', 'merge_install': False, 'path': '/home/ani/yc_ws/src/my_ur_driver', 'symlink_install': True, 'test_result_base': None}
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_target' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_clean_first' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_force_configure' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'ament_cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.220s] DEBUG:colcon.colcon_core.verb:Building package 'robotiq_controllers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/robotiq_controllers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/robotiq_controllers', 'merge_install': False, 'path': '/home/ani/yc_ws/src/gripper/robotiq_controllers', 'symlink_install': True, 'test_result_base': None}
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_target' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.221s] DEBUG:colcon.colcon_core.verb:Building package 'robotiq_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/robotiq_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/robotiq_description', 'merge_install': False, 'path': '/home/ani/yc_ws/src/gripper/robotiq_description', 'symlink_install': True, 'test_result_base': None}
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.221s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/serial', 'merge_install': False, 'path': '/home/ani/yc_ws/src/serial', 'symlink_install': True, 'test_result_base': None}
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_target' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_clean_first' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_force_configure' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'ament_cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.221s] DEBUG:colcon.colcon_core.verb:Building package 'ur_calibration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/ur_calibration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/ur_calibration', 'merge_install': False, 'path': '/home/ani/yc_ws/src/ur_calibration', 'symlink_install': True, 'test_result_base': None}
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_target' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.222s] DEBUG:colcon.colcon_core.verb:Building package 'robotiq_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/robotiq_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/robotiq_driver', 'merge_install': False, 'path': '/home/ani/yc_ws/src/gripper/robotiq_driver', 'symlink_install': True, 'test_result_base': None}
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_target' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.222s] DEBUG:colcon.colcon_core.verb:Building package 'robotiq_hardware_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/yc_ws/build/robotiq_hardware_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/yc_ws/install/robotiq_hardware_tests', 'merge_install': False, 'path': '/home/ani/yc_ws/src/gripper/robotiq_hardware_tests', 'symlink_install': True, 'test_result_base': None}
+[0.222s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.223s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.223s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/yc_ws/src/serial' with build type 'ament_cmake'
+[0.223s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/yc_ws/src/serial'
+[0.224s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.227s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ani/yc_ws/src/app' with build type 'ament_python'
+[0.227s] Level 1:colcon.colcon_core.shell:create_environment_hook('app', 'ament_prefix_path')
+[0.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/app/share/app/hook/ament_prefix_path.ps1'
+[0.228s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/app/share/app/hook/ament_prefix_path.dsv'
+[0.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/app/share/app/hook/ament_prefix_path.sh'
+[0.228s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.228s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.230s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ani/yc_ws/src/app2' with build type 'ament_python'
+[0.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('app2', 'ament_prefix_path')
+[0.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/app2/share/app2/hook/ament_prefix_path.ps1'
+[0.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/app2/share/app2/hook/ament_prefix_path.dsv'
+[0.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/app2/share/app2/hook/ament_prefix_path.sh'
+[0.231s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.231s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.234s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/yc_ws/src/my_pkg' with build type 'ament_cmake'
+[0.234s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/yc_ws/src/my_pkg'
+[0.234s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.234s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.236s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/yc_ws/src/my_ur_driver' with build type 'ament_cmake'
+[0.236s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/yc_ws/src/my_ur_driver'
+[0.236s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.236s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.238s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/yc_ws/src/gripper/robotiq_controllers' with build type 'ament_cmake'
+[0.239s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/yc_ws/src/gripper/robotiq_controllers'
+[0.239s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.239s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.241s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/yc_ws/src/gripper/robotiq_description' with build type 'ament_cmake'
+[0.241s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/yc_ws/src/gripper/robotiq_description'
+[0.241s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.241s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.244s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/yc_ws/src/ur_calibration' with build type 'ament_cmake'
+[0.244s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/yc_ws/src/ur_calibration'
+[0.244s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.244s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/serial -- -j12 -l12
+[0.383s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ani/yc_ws/src/app'
+[0.383s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.383s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.518s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ani/yc_ws/src/app2'
+[0.518s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.518s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/my_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/my_pkg -- -j12 -l12
+[0.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/my_ur_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/my_ur_driver -- -j12 -l12
+[0.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_controllers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_controllers -- -j12 -l12
+[0.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_description -- -j12 -l12
+[0.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/ur_calibration -- -j12 -l12
+[0.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/serial -- -j12 -l12
+[0.567s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_description -- -j12 -l12
+[0.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/my_ur_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/my_ur_driver -- -j12 -l12
+[0.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/serial
+[0.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_description
+[0.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_controllers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_controllers -- -j12 -l12
+[0.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/my_ur_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/my_ur_driver
+[0.609s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/serial
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial' for CMake module files
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial' for CMake config files
+[0.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/lib'
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/bin'
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/lib/pkgconfig/serial.pc'
+[0.620s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/lib/python3.10/site-packages'
+[0.620s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/bin'
+[0.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/serial/share/serial/package.ps1'
+[0.621s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/serial/share/serial/package.dsv'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/serial/share/serial/package.sh'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/serial/share/serial/package.bash'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/serial/share/serial/package.zsh'
+[0.623s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/serial/share/colcon-core/packages/serial)
+[0.626s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_ur_driver)
+[0.627s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver' for CMake module files
+[0.627s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver' for CMake config files
+[0.626s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_controllers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_controllers
+[0.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/my_ur_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/my_ur_driver
+[0.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_ur_driver', 'cmake_prefix_path')
+[0.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/hook/cmake_prefix_path.ps1'
+[0.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/hook/cmake_prefix_path.dsv'
+[0.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/hook/cmake_prefix_path.sh'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver/bin'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver/lib/pkgconfig/my_ur_driver.pc'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver/lib/python3.10/site-packages'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver/bin'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.ps1'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.dsv'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.sh'
+[0.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.bash'
+[0.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.zsh'
+[0.632s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/my_ur_driver/share/colcon-core/packages/my_ur_driver)
+[0.634s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotiq_description)
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description' for CMake module files
+[0.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_description
+[0.637s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description' for CMake config files
+[0.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_description', 'cmake_prefix_path')
+[0.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/hook/cmake_prefix_path.ps1'
+[0.638s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/hook/cmake_prefix_path.dsv'
+[0.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/hook/cmake_prefix_path.sh'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description/bin'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description/lib/pkgconfig/robotiq_description.pc'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description/lib/python3.10/site-packages'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description/bin'
+[0.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.ps1'
+[0.640s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.dsv'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.sh'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.bash'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.zsh'
+[0.642s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/robotiq_description/share/colcon-core/packages/robotiq_description)
+[0.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/ur_calibration -- -j12 -l12
+[0.650s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotiq_controllers)
+[0.651s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers' for CMake module files
+[0.651s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_controllers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_controllers
+[0.651s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers' for CMake config files
+[0.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_controllers', 'cmake_prefix_path')
+[0.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/cmake_prefix_path.ps1'
+[0.653s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/cmake_prefix_path.dsv'
+[0.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/cmake_prefix_path.sh'
+[0.653s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/lib'
+[0.653s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_controllers', 'ld_library_path_lib')
+[0.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/ld_library_path_lib.ps1'
+[0.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/ld_library_path_lib.dsv'
+[0.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/ld_library_path_lib.sh'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/bin'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/lib/pkgconfig/robotiq_controllers.pc'
+[0.655s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/lib/python3.10/site-packages'
+[0.655s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/bin'
+[0.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.ps1'
+[0.655s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.dsv'
+[0.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.sh'
+[0.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.bash'
+[0.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.zsh'
+[0.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/robotiq_controllers/share/colcon-core/packages/robotiq_controllers)
+[0.658s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial' for CMake module files
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial' for CMake config files
+[0.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/lib'
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/bin'
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/lib/pkgconfig/serial.pc'
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/lib/python3.10/site-packages'
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/serial/bin'
+[0.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/serial/share/serial/package.ps1'
+[0.661s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/serial/share/serial/package.dsv'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/serial/share/serial/package.sh'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/serial/share/serial/package.bash'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/serial/share/serial/package.zsh'
+[0.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/serial/share/colcon-core/packages/serial)
+[0.663s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/yc_ws/src/gripper/robotiq_driver' with build type 'ament_cmake'
+[0.663s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/yc_ws/src/gripper/robotiq_driver'
+[0.663s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.663s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.666s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_ur_driver)
+[0.667s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver' for CMake module files
+[0.667s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver' for CMake config files
+[0.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_ur_driver', 'cmake_prefix_path')
+[0.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/hook/cmake_prefix_path.ps1'
+[0.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/hook/cmake_prefix_path.dsv'
+[0.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/hook/cmake_prefix_path.sh'
+[0.669s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver/bin'
+[0.669s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver/lib/pkgconfig/my_ur_driver.pc'
+[0.669s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver/lib/python3.10/site-packages'
+[0.669s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_ur_driver/bin'
+[0.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.ps1'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.dsv'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.sh'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.bash'
+[0.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_ur_driver/share/my_ur_driver/package.zsh'
+[0.671s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/my_ur_driver/share/colcon-core/packages/my_ur_driver)
+[0.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotiq_description)
+[0.672s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description' for CMake module files
+[0.672s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description' for CMake config files
+[0.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_description', 'cmake_prefix_path')
+[0.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/hook/cmake_prefix_path.ps1'
+[0.673s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/hook/cmake_prefix_path.dsv'
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/hook/cmake_prefix_path.sh'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description/bin'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description/lib/pkgconfig/robotiq_description.pc'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description/lib/python3.10/site-packages'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_description/bin'
+[0.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.ps1'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.dsv'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.sh'
+[0.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.bash'
+[0.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.zsh'
+[0.676s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/robotiq_description/share/colcon-core/packages/robotiq_description)
+[0.680s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotiq_controllers)
+[0.680s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers' for CMake module files
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_driver': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_driver -- -j12 -l12
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/ur_calibration
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers' for CMake config files
+[0.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_controllers', 'cmake_prefix_path')
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/cmake_prefix_path.ps1'
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/cmake_prefix_path.dsv'
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/cmake_prefix_path.sh'
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/lib'
+[0.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_controllers', 'ld_library_path_lib')
+[0.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/ld_library_path_lib.ps1'
+[0.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/ld_library_path_lib.dsv'
+[0.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/hook/ld_library_path_lib.sh'
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/bin'
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/lib/pkgconfig/robotiq_controllers.pc'
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/lib/python3.10/site-packages'
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_controllers/bin'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.ps1'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.dsv'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.sh'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.bash'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/package.zsh'
+[0.686s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/robotiq_controllers/share/colcon-core/packages/robotiq_controllers)
+[0.780s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_driver' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_driver -- -j12 -l12
+[0.791s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/app': PYTHONPATH=/home/ani/yc_ws/build/app/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/app/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/app/build --no-deps symlink_data
+[0.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/app2': PYTHONPATH=/home/ani/yc_ws/build/app2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/app2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/app2/build --no-deps symlink_data
+[0.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_driver': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_driver
+[0.847s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_calibration)
+[0.847s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration' for CMake module files
+[0.847s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/ur_calibration
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration' for CMake config files
+[0.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_calibration', 'cmake_prefix_path')
+[0.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/hook/cmake_prefix_path.ps1'
+[0.849s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/hook/cmake_prefix_path.dsv'
+[0.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/hook/cmake_prefix_path.sh'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/lib'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/bin'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/lib/pkgconfig/ur_calibration.pc'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/lib/python3.10/site-packages'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/bin'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.ps1'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.dsv'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.sh'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.bash'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.zsh'
+[0.852s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/ur_calibration/share/colcon-core/packages/ur_calibration)
+[0.876s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_calibration)
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration' for CMake module files
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration' for CMake config files
+[0.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_calibration', 'cmake_prefix_path')
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/hook/cmake_prefix_path.ps1'
+[0.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/hook/cmake_prefix_path.dsv'
+[0.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/hook/cmake_prefix_path.sh'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/lib'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/bin'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/lib/pkgconfig/ur_calibration.pc'
+[0.879s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/lib/python3.10/site-packages'
+[0.879s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/ur_calibration/bin'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.ps1'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.dsv'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.sh'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.bash'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/ur_calibration/share/ur_calibration/package.zsh'
+[0.881s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/ur_calibration/share/colcon-core/packages/ur_calibration)
+[1.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('app', 'pythonpath_develop')
+[1.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/build/app/share/app/hook/pythonpath_develop.ps1'
+[1.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/app' returned '0': PYTHONPATH=/home/ani/yc_ws/build/app/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/app/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/app/build --no-deps symlink_data
+[1.043s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/build/app/share/app/hook/pythonpath_develop.dsv'
+[1.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/build/app/share/app/hook/pythonpath_develop.sh'
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app' for CMake module files
+[1.044s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app' for CMake config files
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app/lib'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app/bin'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app/lib/pkgconfig/app.pc'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app/lib/python3.10/site-packages'
+[1.045s] Level 1:colcon.colcon_core.shell:create_environment_hook('app', 'pythonpath')
+[1.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/app/share/app/hook/pythonpath.ps1'
+[1.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/app/share/app/hook/pythonpath.dsv'
+[1.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/app/share/app/hook/pythonpath.sh'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app/bin'
+[1.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(app)
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/app/share/app/package.ps1'
+[1.048s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/app/share/app/package.dsv'
+[1.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/app/share/app/package.sh'
+[1.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/app/share/app/package.bash'
+[1.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/app/share/app/package.zsh'
+[1.050s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/app/share/colcon-core/packages/app)
+[1.069s] Level 1:colcon.colcon_core.shell:create_environment_hook('app2', 'pythonpath_develop')
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/build/app2/share/app2/hook/pythonpath_develop.ps1'
+[1.070s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/app2' returned '0': PYTHONPATH=/home/ani/yc_ws/build/app2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/app2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/app2/build --no-deps symlink_data
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/build/app2/share/app2/hook/pythonpath_develop.dsv'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/build/app2/share/app2/hook/pythonpath_develop.sh'
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app2' for CMake module files
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app2' for CMake config files
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app2/lib'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app2/bin'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app2/lib/pkgconfig/app2.pc'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app2/lib/python3.10/site-packages'
+[1.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('app2', 'pythonpath')
+[1.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/app2/share/app2/hook/pythonpath.ps1'
+[1.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/app2/share/app2/hook/pythonpath.dsv'
+[1.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/app2/share/app2/hook/pythonpath.sh'
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/app2/bin'
+[1.073s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(app2)
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/app2/share/app2/package.ps1'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/app2/share/app2/package.dsv'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/app2/share/app2/package.sh'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/app2/share/app2/package.bash'
+[1.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/app2/share/app2/package.zsh'
+[1.075s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/app2/share/colcon-core/packages/app2)
+[1.099s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotiq_driver)
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver' for CMake module files
+[1.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_driver' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_driver
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver' for CMake config files
+[1.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_driver', 'cmake_prefix_path')
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/cmake_prefix_path.ps1'
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/cmake_prefix_path.dsv'
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/cmake_prefix_path.sh'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/lib'
+[1.102s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_driver', 'ld_library_path_lib')
+[1.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/ld_library_path_lib.ps1'
+[1.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/ld_library_path_lib.dsv'
+[1.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/ld_library_path_lib.sh'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/bin'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/lib/pkgconfig/robotiq_driver.pc'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/lib/python3.10/site-packages'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/bin'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.ps1'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.dsv'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.sh'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.bash'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.zsh'
+[1.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/robotiq_driver/share/colcon-core/packages/robotiq_driver)
+[1.163s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotiq_driver)
+[1.163s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver' for CMake module files
+[1.163s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver' for CMake config files
+[1.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_driver', 'cmake_prefix_path')
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/cmake_prefix_path.ps1'
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/cmake_prefix_path.dsv'
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/cmake_prefix_path.sh'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/lib'
+[1.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_driver', 'ld_library_path_lib')
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/ld_library_path_lib.ps1'
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/ld_library_path_lib.dsv'
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/hook/ld_library_path_lib.sh'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/bin'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/lib/pkgconfig/robotiq_driver.pc'
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/lib/python3.10/site-packages'
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_driver/bin'
+[1.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.ps1'
+[1.166s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.dsv'
+[1.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.sh'
+[1.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.bash'
+[1.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.zsh'
+[1.167s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/robotiq_driver/share/colcon-core/packages/robotiq_driver)
+[1.168s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/yc_ws/src/gripper/robotiq_hardware_tests' with build type 'ament_cmake'
+[1.168s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/yc_ws/src/gripper/robotiq_hardware_tests'
+[1.168s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.168s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_hardware_tests': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/robotiq_driver/lib:/home/ani/yc_ws/install/serial/lib:/home/ani/yc_ws/install/robotiq_controllers/lib:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_hardware_tests -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/robotiq_hardware_tests
+[2.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_hardware_tests' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/robotiq_driver/lib:/home/ani/yc_ws/install/serial/lib:/home/ani/yc_ws/install/robotiq_controllers/lib:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_hardware_tests -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/robotiq_hardware_tests
+[2.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_hardware_tests': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/robotiq_driver/lib:/home/ani/yc_ws/install/serial/lib:/home/ani/yc_ws/install/robotiq_controllers/lib:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_hardware_tests -- -j12 -l12
+[2.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_hardware_tests' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/robotiq_driver/lib:/home/ani/yc_ws/install/serial/lib:/home/ani/yc_ws/install/robotiq_controllers/lib:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_hardware_tests -- -j12 -l12
+[2.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/robotiq_hardware_tests': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/robotiq_driver/lib:/home/ani/yc_ws/install/serial/lib:/home/ani/yc_ws/install/robotiq_controllers/lib:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_hardware_tests
+[2.929s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotiq_hardware_tests)
+[2.929s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests' for CMake module files
+[2.930s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/robotiq_hardware_tests' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/ur_calibration:/home/ani/yc_ws/install/robotiq_hardware_tests:/home/ani/yc_ws/install/robotiq_description:/home/ani/yc_ws/install/robotiq_controllers:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/my_pkg:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/robotiq_driver/lib:/home/ani/yc_ws/install/serial/lib:/home/ani/yc_ws/install/robotiq_controllers/lib:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_hardware_tests
+[2.930s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests' for CMake config files
+[2.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_hardware_tests', 'cmake_prefix_path')
+[2.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/hook/cmake_prefix_path.ps1'
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/hook/cmake_prefix_path.dsv'
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/hook/cmake_prefix_path.sh'
+[2.931s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests/bin'
+[2.931s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests/lib/pkgconfig/robotiq_hardware_tests.pc'
+[2.931s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests/lib/python3.10/site-packages'
+[2.932s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests/bin'
+[2.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.ps1'
+[2.932s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.dsv'
+[2.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.sh'
+[2.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.bash'
+[2.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.zsh'
+[2.933s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/robotiq_hardware_tests/share/colcon-core/packages/robotiq_hardware_tests)
+[2.956s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotiq_hardware_tests)
+[2.956s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests' for CMake module files
+[2.956s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests' for CMake config files
+[2.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotiq_hardware_tests', 'cmake_prefix_path')
+[2.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/hook/cmake_prefix_path.ps1'
+[2.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/hook/cmake_prefix_path.dsv'
+[2.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/hook/cmake_prefix_path.sh'
+[2.958s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests/bin'
+[2.958s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests/lib/pkgconfig/robotiq_hardware_tests.pc'
+[2.958s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests/lib/python3.10/site-packages'
+[2.958s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/robotiq_hardware_tests/bin'
+[2.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.ps1'
+[2.959s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.dsv'
+[2.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.sh'
+[2.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.bash'
+[2.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.zsh'
+[2.960s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/robotiq_hardware_tests/share/colcon-core/packages/robotiq_hardware_tests)
+[6.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/my_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/my_pkg -- -j12 -l12
+[6.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/yc_ws/build/my_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/my_pkg
+[10.199s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_pkg)
+[10.200s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg' for CMake module files
+[10.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/yc_ws/build/my_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/my_pkg
+[10.201s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg' for CMake config files
+[10.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_pkg', 'cmake_prefix_path')
+[10.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/my_pkg/share/my_pkg/hook/cmake_prefix_path.ps1'
+[10.207s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/my_pkg/share/my_pkg/hook/cmake_prefix_path.dsv'
+[10.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/my_pkg/share/my_pkg/hook/cmake_prefix_path.sh'
+[10.208s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/lib'
+[10.208s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/bin'
+[10.209s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/lib/pkgconfig/my_pkg.pc'
+[10.209s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/lib/python3.10/site-packages'
+[10.209s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/bin'
+[10.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.ps1'
+[10.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.dsv'
+[10.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.sh'
+[10.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.bash'
+[10.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.zsh'
+[10.211s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/my_pkg/share/colcon-core/packages/my_pkg)
+[10.233s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_pkg)
+[10.233s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg' for CMake module files
+[10.233s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg' for CMake config files
+[10.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_pkg', 'cmake_prefix_path')
+[10.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/my_pkg/share/my_pkg/hook/cmake_prefix_path.ps1'
+[10.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/yc_ws/install/my_pkg/share/my_pkg/hook/cmake_prefix_path.dsv'
+[10.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/yc_ws/install/my_pkg/share/my_pkg/hook/cmake_prefix_path.sh'
+[10.238s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/lib'
+[10.239s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/bin'
+[10.239s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/lib/pkgconfig/my_pkg.pc'
+[10.239s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/lib/python3.10/site-packages'
+[10.239s] Level 1:colcon.colcon_core.environment:checking '/home/ani/yc_ws/install/my_pkg/bin'
+[10.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.ps1'
+[10.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.dsv'
+[10.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.sh'
+[10.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.bash'
+[10.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/yc_ws/install/my_pkg/share/my_pkg/package.zsh'
+[10.241s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/yc_ws/install/my_pkg/share/colcon-core/packages/my_pkg)
+[10.242s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.242s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.242s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.242s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.246s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.246s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.246s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.265s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.266s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ani/yc_ws/install/local_setup.ps1'
+[10.266s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ani/yc_ws/install/_local_setup_util_ps1.py'
+[10.267s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ani/yc_ws/install/setup.ps1'
+[10.268s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ani/yc_ws/install/local_setup.sh'
+[10.269s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ani/yc_ws/install/_local_setup_util_sh.py'
+[10.269s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ani/yc_ws/install/setup.sh'
+[10.270s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ani/yc_ws/install/local_setup.bash'
+[10.270s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ani/yc_ws/install/setup.bash'
+[10.271s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ani/yc_ws/install/local_setup.zsh'
+[10.272s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ani/yc_ws/install/setup.zsh'

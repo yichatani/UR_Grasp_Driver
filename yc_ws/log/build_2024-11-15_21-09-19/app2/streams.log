@@ -1,0 +1,32 @@
+[0.607s] Invoking command in '/home/ani/yc_ws/build/app2': PYTHONPATH=/home/ani/yc_ws/build/app2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/app2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/app2/build --no-deps symlink_data
+[0.794s] running develop
+[0.795s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.795s]   warnings.warn(
+[0.879s] running egg_info
+[0.879s] creating app2.egg-info
+[0.879s] writing app2.egg-info/PKG-INFO
+[0.879s] writing dependency_links to app2.egg-info/dependency_links.txt
+[0.879s] writing entry points to app2.egg-info/entry_points.txt
+[0.879s] writing requirements to app2.egg-info/requires.txt
+[0.879s] writing top-level names to app2.egg-info/top_level.txt
+[0.881s] writing manifest file 'app2.egg-info/SOURCES.txt'
+[0.882s] reading manifest file 'app2.egg-info/SOURCES.txt'
+[0.882s] writing manifest file 'app2.egg-info/SOURCES.txt'
+[0.883s] running build_ext
+[0.884s] Creating /home/ani/yc_ws/install/app2/lib/python3.10/site-packages/app2.egg-link (link to .)
+[0.884s] Installing coordinator2 script to /home/ani/yc_ws/install/app2/lib/app
+[0.885s] Installing grasp_detector_controller script to /home/ani/yc_ws/install/app2/lib/app
+[0.885s] Installing gripper_controller script to /home/ani/yc_ws/install/app2/lib/app
+[0.885s] Installing robot_controller_moveit script to /home/ani/yc_ws/install/app2/lib/app
+[0.885s] Installing robot_controller_rtde script to /home/ani/yc_ws/install/app2/lib/app
+[0.885s] 
+[0.885s] Installed /home/ani/yc_ws/build/app2
+[0.885s] running symlink_data
+[0.885s] creating /home/ani/yc_ws/install/app2/share/ament_index
+[0.885s] creating /home/ani/yc_ws/install/app2/share/ament_index/resource_index
+[0.885s] creating /home/ani/yc_ws/install/app2/share/ament_index/resource_index/packages
+[0.885s] symbolically linking /home/ani/yc_ws/build/app2/resource/app2 -> /home/ani/yc_ws/install/app2/share/ament_index/resource_index/packages
+[0.885s] symbolically linking /home/ani/yc_ws/build/app2/package.xml -> /home/ani/yc_ws/install/app2/share/app2
+[0.885s] creating /home/ani/yc_ws/install/app2/share/app2/launch
+[0.885s] symbolically linking /home/ani/yc_ws/build/app2/launch/coordinator_launch.py -> /home/ani/yc_ws/install/app2/share/app2/launch
+[0.906s] Invoked command in '/home/ani/yc_ws/build/app2' returned '0': PYTHONPATH=/home/ani/yc_ws/build/app2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/app2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/app2/build --no-deps symlink_data

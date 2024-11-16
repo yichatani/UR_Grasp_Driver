@@ -1,0 +1,1 @@
+/home/ani/yc_ws/build/my_ur_driver/ament_cmake_environment_hooks/local_setup.sh

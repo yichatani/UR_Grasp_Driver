@@ -1,0 +1,59 @@
+[35m[1mConsolidate compiler generated dependencies of target gmock_main[0m
+[35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[35m[1mConsolidate compiler generated dependencies of target robotiq_driver[0m
+[  8%] Built target gmock_main
+[ 20%] Built target gmock
+[ 58%] Built target robotiq_driver
+[35m[1mConsolidate compiler generated dependencies of target test_robotiq_gripper_hardware_interface[0m
+[35m[1mConsolidate compiler generated dependencies of target test_data_utils[0m
+[35m[1mConsolidate compiler generated dependencies of target test_default_serial_factory[0m
+[35m[1mConsolidate compiler generated dependencies of target test_default_driver_factory[0m
+[35m[1mConsolidate compiler generated dependencies of target test_crc_utils[0m
+[ 66%] Built target test_data_utils
+[ 75%] Built target test_robotiq_gripper_hardware_interface
+[ 83%] Built target test_default_serial_factory
+[ 91%] Built target test_default_driver_factory
+[100%] Built target test_crc_utils
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver//hardware_interface_plugin.xml
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/environment/library_path.sh
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/environment/library_path.dsv
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/crc_utils.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/data_utils.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/default_driver.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/default_driver_factory.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/default_serial.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/default_serial_factory.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/driver.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/driver_exception.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/driver_factory.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/fake/fake_driver.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/hardware_interface.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/serial.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/serial_factory.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/include/robotiq_driver/visibility_control.hpp
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/ament_index/resource_index/package_run_dependencies/robotiq_driver
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/ament_index/resource_index/parent_prefix_path/robotiq_driver
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/environment/ament_prefix_path.sh
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/environment/path.sh
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/environment/path.dsv
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/local_setup.bash
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/local_setup.sh
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/local_setup.zsh
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/local_setup.dsv
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.dsv
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/ament_index/resource_index/packages/robotiq_driver
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/robotiq_driver
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driverConfig.cmake
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driverConfig-version.cmake
+-- Symlinking: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/package.xml
+-- Installing: /home/ani/yc_ws/install/robotiq_driver/lib/librobotiq_driver.so
+-- Set runtime path of "/home/ani/yc_ws/install/robotiq_driver/lib/librobotiq_driver.so" to ""
+-- Installing: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driver_targetsExport.cmake
+-- Installing: /home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driver_targetsExport-noconfig.cmake

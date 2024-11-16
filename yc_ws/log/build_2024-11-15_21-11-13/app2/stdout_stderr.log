@@ -1,0 +1,21 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing app2.egg-info/PKG-INFO
+writing dependency_links to app2.egg-info/dependency_links.txt
+writing entry points to app2.egg-info/entry_points.txt
+writing requirements to app2.egg-info/requires.txt
+writing top-level names to app2.egg-info/top_level.txt
+reading manifest file 'app2.egg-info/SOURCES.txt'
+writing manifest file 'app2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ani/yc_ws/install/app2/lib/python3.10/site-packages/app2.egg-link (link to .)
+Installing coordinator2 script to /home/ani/yc_ws/install/app2/lib/app
+Installing grasp_detector_controller script to /home/ani/yc_ws/install/app2/lib/app
+Installing gripper_controller script to /home/ani/yc_ws/install/app2/lib/app
+Installing robot_controller_moveit script to /home/ani/yc_ws/install/app2/lib/app
+Installing robot_controller_rtde script to /home/ani/yc_ws/install/app2/lib/app
+
+Installed /home/ani/yc_ws/build/app2
+running symlink_data

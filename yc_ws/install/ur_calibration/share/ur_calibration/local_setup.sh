@@ -1,0 +1,1 @@
+/home/ani/yc_ws/build/ur_calibration/ament_cmake_environment_hooks/local_setup.sh

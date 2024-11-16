@@ -1,0 +1,4 @@
+[console_scripts]
+coordinator = app.coordinator:main
+grasp_detection = app.grasp_detection:main
+

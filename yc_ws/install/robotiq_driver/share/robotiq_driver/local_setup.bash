@@ -1,0 +1,1 @@
+/home/ani/yc_ws/build/robotiq_driver/ament_cmake_environment_hooks/local_setup.bash

@@ -1,0 +1,1 @@
+/usr/lib/python3/dist-packages/ament_package/template/environment_hook/library_path.sh

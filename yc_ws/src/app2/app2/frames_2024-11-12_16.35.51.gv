@@ -1,0 +1,18 @@
+digraph G {
+"left_inner_finger" -> "left_inner_finger_pad"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"left_outer_finger" -> "left_inner_finger"[label=" Broadcaster: default_authority\nAverage rate: 19.768\nBuffer length: 5.008\nMost recent transform: 1731400551.43633\nOldest transform: 1731400546.428344\n"];
+"left_outer_knuckle" -> "left_outer_finger"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robotiq_140_base_link" -> "left_outer_knuckle"[label=" Broadcaster: default_authority\nAverage rate: 19.768\nBuffer length: 5.008\nMost recent transform: 1731400551.43633\nOldest transform: 1731400546.428344\n"];
+"right_inner_finger" -> "right_inner_finger_pad"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"right_outer_finger" -> "right_inner_finger"[label=" Broadcaster: default_authority\nAverage rate: 19.768\nBuffer length: 5.008\nMost recent transform: 1731400551.43633\nOldest transform: 1731400546.428344\n"];
+"right_outer_knuckle" -> "right_outer_finger"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robotiq_140_base_link" -> "right_outer_knuckle"[label=" Broadcaster: default_authority\nAverage rate: 19.768\nBuffer length: 5.008\nMost recent transform: 1731400551.43633\nOldest transform: 1731400546.428344\n"];
+"robotiq_base_link" -> "robotiq_140_base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "robotiq_base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robotiq_140_base_link" -> "left_inner_knuckle"[label=" Broadcaster: default_authority\nAverage rate: 19.768\nBuffer length: 5.008\nMost recent transform: 1731400551.43633\nOldest transform: 1731400546.428344\n"];
+"robotiq_140_base_link" -> "right_inner_knuckle"[label=" Broadcaster: default_authority\nAverage rate: 19.768\nBuffer length: 5.008\nMost recent transform: 1731400551.43633\nOldest transform: 1731400546.428344\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1731400551.4481106"[ shape=plaintext ] ;
+}->"world";
+}

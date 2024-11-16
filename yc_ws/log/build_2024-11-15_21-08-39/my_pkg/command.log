@@ -1,0 +1,1 @@
+Invoking command in '/home/ani/yc_ws/build/my_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/my_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/my_pkg

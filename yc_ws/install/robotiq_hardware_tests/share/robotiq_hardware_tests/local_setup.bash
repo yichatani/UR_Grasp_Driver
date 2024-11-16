@@ -1,0 +1,1 @@
+/home/ani/yc_ws/build/robotiq_hardware_tests/ament_cmake_environment_hooks/local_setup.bash
