@@ -1,8 +1,0 @@
-[0.364s] Invoking command in '/home/ani/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/ur_calibration -- -j12 -l12
-[0.405s] [ 20%] [32mBuilding CXX object CMakeFiles/calibration.dir/src/calibration.cpp.o[0m
-[0.405s] [ 40%] [32mBuilding CXX object CMakeFiles/calibration.dir/src/calibration_consumer.cpp.o[0m
-[6.268s] [ 60%] [32m[1mLinking CXX static library libcalibration.a[0m
-[6.369s] [ 60%] Built target calibration
-[6.384s] [ 80%] [32mBuilding CXX object CMakeFiles/calibration_correction.dir/src/calibration_correction.cpp.o[0m
-[10.558s] [100%] [32m[1mLinking CXX executable calibration_correction[0m
-[10.739s] [100%] Built target calibration_correction

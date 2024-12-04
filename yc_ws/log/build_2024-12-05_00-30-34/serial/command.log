@@ -1,5 +1,0 @@
-Invoking command in '/home/ani/yc_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/serial
-Invoked command in '/home/ani/yc_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/serial
-Invoking command in '/home/ani/yc_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/serial -- -j12 -l12
-Invoked command in '/home/ani/yc_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/serial -- -j12 -l12
-Invoking command in '/home/ani/yc_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/serial

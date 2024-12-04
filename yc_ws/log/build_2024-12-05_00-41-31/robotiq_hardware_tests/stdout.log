@@ -1,4 +1,0 @@
-[ 33%] [32mBuilding CXX object CMakeFiles/full_test.dir/src/command_line_utility.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/full_test.dir/src/gripper_interface_test.cpp.o[0m
-[100%] [32m[1mLinking CXX executable full_test[0m
-[100%] Built target full_test

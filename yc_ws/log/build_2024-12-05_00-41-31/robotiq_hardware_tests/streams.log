@@ -1,5 +1,0 @@
-[0.008s] Invoking command in '/home/ani/yc_ws/build/robotiq_hardware_tests': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/robotiq_driver/lib:/home/ani/yc_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_hardware_tests -- -j12 -l12
-[0.047s] [ 33%] [32mBuilding CXX object CMakeFiles/full_test.dir/src/command_line_utility.cpp.o[0m
-[0.047s] [ 66%] [32mBuilding CXX object CMakeFiles/full_test.dir/src/gripper_interface_test.cpp.o[0m
-[0.616s] [100%] [32m[1mLinking CXX executable full_test[0m
-[0.718s] [100%] Built target full_test
