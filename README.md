@@ -1,12 +1,12 @@
 # Portable UR_Grasp_Driver
 
-The workspace is a nearly complete robot arm control system based on vision. It contains packages not only like Moveit, and RTDE, but also contains some self-built framework to better handle ros2. 
+The workspace is a nearly complete robot arm control system based on vision. It contains packages like Moveit and RTDE and some self-built frameworks to better handle ros2. 
 
 It is built under Ros2 humble.
 
 Hopefully, it can help to build a workspace faster, rather than build from the beginning every time. 
 
-The following is some commands you need. 
+The following are some commands you need. 
 
 ### Compile the workspace
 
@@ -18,7 +18,7 @@ source install/setup.bash
 
 ### Launching the robot:
 ```bash
-ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur10e robot_ip:=192.168.56.101
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur10e robot_ip:=XXX.XXX.XX.XXX
 ```
 
 ### Launching the Moveit!
@@ -28,7 +28,7 @@ ros2 launch ur_moveit_config ur_moveit.launch.py  ur_type:=ur10e
 
 ### Launching the robot on Simulation
 ```bash
-ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur10e robot_ip:=192.168.56.101 use_fake_hardware:=true fake_execution:=true
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur10e robot_ip:=XXX.XXX.XX.XXX use_fake_hardware:=true fake_execution:=true
 ```
 ### Launching the moveit on Simulation
 ```bash
