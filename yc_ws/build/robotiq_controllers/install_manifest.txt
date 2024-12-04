@@ -1,3 +1,0 @@
-/home/ani/yc_ws/install/robotiq_controllers/lib/librobotiq_controllers.so
-/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/cmake/export_robotiq_controllersExport.cmake
-/home/ani/yc_ws/install/robotiq_controllers/share/robotiq_controllers/cmake/export_robotiq_controllersExport-noconfig.cmake
