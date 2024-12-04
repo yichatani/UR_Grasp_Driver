@@ -1,0 +1,10 @@
+/home/ani/yc_ws/src/build/serial/CMakeFiles/uninstall.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/serial_uninstall.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/serial.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/test.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/edit_cache.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/rebuild_cache.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/list_install_components.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/install.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/install/local.dir
+/home/ani/yc_ws/src/build/serial/CMakeFiles/install/strip.dir

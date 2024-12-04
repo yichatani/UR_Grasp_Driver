@@ -1,0 +1,31 @@
+[0.359s] Invoking command in '/home/ani/yc_ws/src/build/ur_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/ur_calibration -- -j12 -l12
+[0.392s] [35m[1mConsolidate compiler generated dependencies of target calibration[0m
+[0.411s] [ 60%] Built target calibration
+[0.424s] [35m[1mConsolidate compiler generated dependencies of target calibration_correction[0m
+[0.440s] [100%] Built target calibration_correction
+[0.526s] Invoked command in '/home/ani/yc_ws/src/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/ur_calibration -- -j12 -l12
+[0.527s] Invoking command in '/home/ani/yc_ws/src/build/ur_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/ur_calibration
+[0.529s] -- Install configuration: "RelWithDebInfo"
+[0.529s] -- Execute custom install script
+[0.529s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/lib/ur_calibration/calibration_correction
+[0.529s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/include/ur_calibration/calibration.hpp
+[0.529s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/include/ur_calibration/calibration_consumer.hpp
+[0.529s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/launch/calibration_correction.launch.py
+[0.529s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ament_index/resource_index/package_run_dependencies/ur_calibration
+[0.529s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ament_index/resource_index/parent_prefix_path/ur_calibration
+[0.529s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/environment/ament_prefix_path.sh
+[0.530s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/environment/ament_prefix_path.dsv
+[0.530s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/environment/path.sh
+[0.530s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/environment/path.dsv
+[0.530s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/local_setup.bash
+[0.530s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/local_setup.sh
+[0.530s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/local_setup.zsh
+[0.530s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/local_setup.dsv
+[0.530s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/package.dsv
+[0.537s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ament_index/resource_index/packages/ur_calibration
+[0.537s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.538s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.538s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig.cmake
+[0.538s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake
+[0.538s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/package.xml
+[0.571s] Invoked command in '/home/ani/yc_ws/src/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/ur_calibration

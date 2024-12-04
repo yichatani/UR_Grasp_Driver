@@ -1,0 +1,84 @@
+[0.361s] Invoking command in '/home/ani/yc_ws/build/robotiq_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/robotiq_description
+[0.403s] -- The C compiler identification is GNU 11.4.0
+[0.455s] -- The CXX compiler identification is GNU 11.4.0
+[0.462s] -- Detecting C compiler ABI info
+[0.516s] -- Detecting C compiler ABI info - done
+[0.525s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.525s] -- Detecting C compile features
+[0.525s] -- Detecting C compile features - done
+[0.526s] -- Detecting CXX compiler ABI info
+[0.607s] -- Detecting CXX compiler ABI info - done
+[0.618s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.618s] -- Detecting CXX compile features
+[0.618s] -- Detecting CXX compile features - done
+[0.620s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.775s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.836s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.930s] -- Configuring done
+[0.933s] -- Generating done
+[0.934s] -- Build files have been written to: /home/ani/yc_ws/build/robotiq_description
+[0.939s] Invoked command in '/home/ani/yc_ws/build/robotiq_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/robotiq_description
+[0.941s] Invoking command in '/home/ani/yc_ws/build/robotiq_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_description -- -j12 -l12
+[0.970s] Invoked command in '/home/ani/yc_ws/build/robotiq_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_description -- -j12 -l12
+[0.978s] Invoking command in '/home/ani/yc_ws/build/robotiq_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_description
+[0.982s] -- Install configuration: ""
+[0.983s] -- Execute custom install script
+[0.983s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.yaml
+[0.989s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/launch/robotiq_control.launch.py
+[0.995s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/launch/view_gripper.launch.py
+[1.003s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_base_link.stl
+[1.009s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_coupling.stl
+[1.016s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger.stl
+[1.023s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle.stl
+[1.029s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_finger.stl
+[1.035s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle.stl
+[1.041s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger.stl
+[1.047s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl
+[1.053s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl
+[1.058s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_knuckle.stl
+[1.064s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger.stl
+[1.070s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl
+[1.076s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl
+[1.082s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_knuckle.stl
+[1.088s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/robotiq_base.stl
+[1.094s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/ur_to_robotiq_adapter.stl
+[1.102s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_base_link.stl
+[1.107s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_coupling.stl
+[1.114s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger.stl
+[1.122s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle.stl
+[1.128s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_finger.stl
+[1.135s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle.stl
+[1.142s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger.dae
+[1.149s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae
+[1.157s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae
+[1.164s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_knuckle.dae
+[1.172s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger.dae
+[1.179s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae
+[1.185s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae
+[1.191s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_knuckle.dae
+[1.197s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/robotiq_base.dae
+[1.204s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae
+[1.210s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/rviz/view_urdf.rviz
+[1.216s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/urdf/2f_140.ros2_control.xacro
+[1.223s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/urdf/2f_85.ros2_control.xacro
+[1.228s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140.xacro
+[1.235s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_gripper.urdf.xacro
+[1.241s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_macro.urdf.xacro
+[1.247s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_gripper.urdf.xacro
+[1.254s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_macro.urdf.xacro
+[1.260s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/urdf/ur_to_robotiq_adapter.urdf.xacro
+[1.265s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/ament_index/resource_index/package_run_dependencies/robotiq_description
+[1.272s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/ament_index/resource_index/parent_prefix_path/robotiq_description
+[1.279s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.sh
+[1.285s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.dsv
+[1.291s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/environment/path.sh
+[1.298s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/environment/path.dsv
+[1.304s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/local_setup.bash
+[1.310s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/local_setup.sh
+[1.316s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/local_setup.zsh
+[1.322s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/local_setup.dsv
+[1.328s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.dsv
+[1.335s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/ament_index/resource_index/packages/robotiq_description
+[1.341s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig.cmake
+[1.349s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig-version.cmake
+[1.357s] -- Symlinking: /home/ani/yc_ws/install/robotiq_description/share/robotiq_description/package.xml

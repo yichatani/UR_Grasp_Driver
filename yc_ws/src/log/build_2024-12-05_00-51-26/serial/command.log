@@ -1,0 +1,4 @@
+Invoking command in '/home/ani/yc_ws/src/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/serial -- -j12 -l12
+Invoked command in '/home/ani/yc_ws/src/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/serial -- -j12 -l12
+Invoking command in '/home/ani/yc_ws/src/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/serial
+Invoked command in '/home/ani/yc_ws/src/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/serial

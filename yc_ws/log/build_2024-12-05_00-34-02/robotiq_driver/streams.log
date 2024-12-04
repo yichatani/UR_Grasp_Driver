@@ -1,0 +1,46 @@
+[0.010s] Invoking command in '/home/ani/yc_ws/build/robotiq_driver': AMENT_PREFIX_PATH=/home/ani/yc_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/robotiq_driver
+[0.063s] -- The CXX compiler identification is GNU 11.4.0
+[0.068s] -- Detecting CXX compiler ABI info
+[0.124s] -- Detecting CXX compiler ABI info - done
+[0.129s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.129s] -- Detecting CXX compile features
+[0.130s] -- Detecting CXX compile features - done
+[0.133s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.234s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.278s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.300s] -- Found hardware_interface: 2.43.1 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.330s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.334s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.340s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.348s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.360s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.501s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.503s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.523s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.566s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.569s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.586s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.589s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.599s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.611s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.619s] -- Looking for C++ include pthread.h
+[0.684s] -- Looking for C++ include pthread.h - found
+[0.684s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.748s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.749s] -- Found Threads: TRUE  
+[0.779s] -- Found serial: 1.2.1 (/home/ani/yc_ws/install/serial/share/serial/cmake)
+[0.790s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.792s] -- Found ament_cmake_gmock: 1.3.10 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[0.793s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.794s] -- Found ros2_control_test_assets: 2.43.1 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+[0.866s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[0.896s] -- The C compiler identification is GNU 11.4.0
+[0.901s] -- Detecting C compiler ABI info
+[0.953s] -- Detecting C compiler ABI info - done
+[0.958s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.958s] -- Detecting C compile features
+[0.958s] -- Detecting C compile features - done
+[0.961s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.012s] -- Configuring done
+[1.111s] -- Generating done
+[1.126s] -- Build files have been written to: /home/ani/yc_ws/build/robotiq_driver

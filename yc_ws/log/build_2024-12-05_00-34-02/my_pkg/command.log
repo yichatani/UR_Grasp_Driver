@@ -1,0 +1,1 @@
+Invoking command in '/home/ani/yc_ws/build/my_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/my_pkg -- -j12 -l12

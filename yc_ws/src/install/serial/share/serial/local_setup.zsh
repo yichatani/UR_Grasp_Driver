@@ -1,0 +1,1 @@
+/home/ani/yc_ws/src/build/serial/ament_cmake_environment_hooks/local_setup.zsh

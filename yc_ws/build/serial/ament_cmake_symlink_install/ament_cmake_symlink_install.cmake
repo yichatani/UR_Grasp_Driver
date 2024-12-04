@@ -313,8 +313,8 @@ message(STATUS "Execute custom install script")
 # install(DIRECTORY "include/" "DESTINATION" "include")
 ament_cmake_symlink_install_directory("/home/ani/yc_ws/src/serial" DIRECTORY "include/" "DESTINATION" "include")
 
-# install(FILES "/usr/lib/python3/dist-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/serial/environment")
-ament_cmake_symlink_install_files("/home/ani/yc_ws/src/serial" FILES "/usr/lib/python3/dist-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/serial/environment")
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/serial/environment")
+ament_cmake_symlink_install_files("/home/ani/yc_ws/src/serial" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/serial/environment")
 
 # install(FILES "/home/ani/yc_ws/build/serial/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/serial/environment")
 ament_cmake_symlink_install_files("/home/ani/yc_ws/src/serial" FILES "/home/ani/yc_ws/build/serial/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/serial/environment")

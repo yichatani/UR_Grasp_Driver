@@ -1,0 +1,7 @@
+[console_scripts]
+coordinator2 = scripts.coordinator2:main
+grasp_detector_controller = scripts.grasp_detector_controller:main
+gripper_controller = scripts.gripper_controller:main
+robot_controller_moveit = scripts.robot_controller_moveit:main
+robot_controller_rtde = scripts.robot_controller_rtde:main
+

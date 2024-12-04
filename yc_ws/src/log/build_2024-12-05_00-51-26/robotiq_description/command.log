@@ -1,0 +1,4 @@
+Invoking command in '/home/ani/yc_ws/src/build/robotiq_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/robotiq_description -- -j12 -l12
+Invoked command in '/home/ani/yc_ws/src/build/robotiq_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/robotiq_description -- -j12 -l12
+Invoking command in '/home/ani/yc_ws/src/build/robotiq_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/robotiq_description
+Invoked command in '/home/ani/yc_ws/src/build/robotiq_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/robotiq_description

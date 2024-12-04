@@ -1,0 +1,8 @@
+running develop
+running egg_info
+writing find_grasp.egg-info/PKG-INFO
+writing dependency_links to find_grasp.egg-info/dependency_links.txt
+writing entry points to find_grasp.egg-info/entry_points.txt
+writing requirements to find_grasp.egg-info/requires.txt
+writing top-level names to find_grasp.egg-info/top_level.txt
+error: package directory 'find_grasp' does not exist

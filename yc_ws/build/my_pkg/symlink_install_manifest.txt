@@ -660,6 +660,8 @@
 /home/ani/yc_ws/install/my_pkg/share/my_pkg/scripts/calibration/myfileorganiser.py
 /home/ani/yc_ws/install/my_pkg/share/my_pkg/scripts/calibration/myframe.py
 /home/ani/yc_ws/install/my_pkg/share/my_pkg/scripts/calibration/try.py
+/home/ani/yc_ws/install/my_pkg/share/my_pkg/scripts/mine/02RECORD.py
+/home/ani/yc_ws/install/my_pkg/share/my_pkg/scripts/mine/RECORD.py
 /home/ani/yc_ws/install/my_pkg/share/my_pkg/scripts/mine/__init__.py
 /home/ani/yc_ws/install/my_pkg/share/my_pkg/scripts/mine/myframe.py
 /home/ani/yc_ws/install/my_pkg/share/my_pkg/scripts/mine/realsense_subscriber.py

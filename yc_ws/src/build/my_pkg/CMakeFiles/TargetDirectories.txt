@@ -1,0 +1,10 @@
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/uninstall.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/my_pkg_uninstall.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/move_robot.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/test.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/edit_cache.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/rebuild_cache.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/list_install_components.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/install.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/install/local.dir
+/home/ani/yc_ws/src/build/my_pkg/CMakeFiles/install/strip.dir

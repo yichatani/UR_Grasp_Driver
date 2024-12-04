@@ -313,8 +313,8 @@ message(STATUS "Execute custom install script")
 # install(FILES "hardware_interface_plugin.xml" "DESTINATION" "share/robotiq_driver/")
 ament_cmake_symlink_install_files("/home/ani/yc_ws/src/gripper/robotiq_driver" FILES "hardware_interface_plugin.xml" "DESTINATION" "share/robotiq_driver/")
 
-# install(FILES "/usr/lib/python3/dist-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/robotiq_driver/environment")
-ament_cmake_symlink_install_files("/home/ani/yc_ws/src/gripper/robotiq_driver" FILES "/usr/lib/python3/dist-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/robotiq_driver/environment")
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/robotiq_driver/environment")
+ament_cmake_symlink_install_files("/home/ani/yc_ws/src/gripper/robotiq_driver" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/robotiq_driver/environment")
 
 # install(FILES "/home/ani/yc_ws/build/robotiq_driver/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/robotiq_driver/environment")
 ament_cmake_symlink_install_files("/home/ani/yc_ws/src/gripper/robotiq_driver" FILES "/home/ani/yc_ws/build/robotiq_driver/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/robotiq_driver/environment")

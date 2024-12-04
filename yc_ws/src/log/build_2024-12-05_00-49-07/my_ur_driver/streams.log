@@ -1,0 +1,118 @@
+[0.366s] Invoking command in '/home/ani/yc_ws/src/build/my_ur_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/my_ur_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/src/install/my_ur_driver
+[0.404s] -- The C compiler identification is GNU 11.4.0
+[0.452s] -- The CXX compiler identification is GNU 11.4.0
+[0.459s] -- Detecting C compiler ABI info
+[0.517s] -- Detecting C compiler ABI info - done
+[0.523s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.523s] -- Detecting C compile features
+[0.523s] -- Detecting C compile features - done
+[0.526s] -- Detecting CXX compiler ABI info
+[0.598s] -- Detecting CXX compiler ABI info - done
+[0.605s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.605s] -- Detecting CXX compile features
+[0.606s] -- Detecting CXX compile features - done
+[0.608s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.754s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.819s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.851s] -- Found ur_robot_driver: 2.2.16 (/opt/ros/humble/share/ur_robot_driver/cmake)
+[0.898s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.903s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.913s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.929s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.942s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.104s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.106s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.131s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.174s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.177s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.189s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.191s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.198s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.210s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.216s] -- Looking for pthread.h
+[1.271s] -- Looking for pthread.h - found
+[1.272s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.336s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.337s] -- Found Threads: TRUE  
+[1.482s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.483s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.483s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.568s] -- Found moveit_ros_move_group: 2.5.5 (/opt/ros/humble/share/moveit_ros_move_group/cmake)
+[1.591s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.612s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.626s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.644s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.725s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.852s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.865s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.932s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.933s] -- Added test 'lint_cmake' to check CMake code style
+[1.934s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.938s] -- Added test 'xmllint' to check XML markup files
+[1.941s] -- Configuring done
+[1.946s] -- Generating done
+[1.948s] -- Build files have been written to: /home/ani/yc_ws/src/build/my_ur_driver
+[1.962s] Invoked command in '/home/ani/yc_ws/src/build/my_ur_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/my_ur_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/src/install/my_ur_driver
+[1.963s] Invoking command in '/home/ani/yc_ws/src/build/my_ur_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/my_ur_driver -- -j12 -l12
+[2.004s] Invoked command in '/home/ani/yc_ws/src/build/my_ur_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/my_ur_driver -- -j12 -l12
+[2.005s] Invoking command in '/home/ani/yc_ws/src/build/my_ur_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/my_ur_driver
+[2.012s] -- Install configuration: ""
+[2.013s] -- Execute custom install script
+[2.013s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/launch/__init__.py
+[2.023s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/launch/__pycache__/camera.launch.cpython-312.pyc
+[2.029s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/launch/__pycache__/ur_moveit.launch.cpython-310.pyc
+[2.037s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/launch/my_camera.launch.py
+[2.045s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/launch/my_moveit.launch.py
+[2.053s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/launch/my_ur.launch.py
+[2.060s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/launch/simulation.launch.py
+[2.068s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/ur_controllers/ur_calibration.yaml
+[2.074s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/ur_controllers/ur_controllers.yaml
+[2.081s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/gripper/2f_140.ros2_control.xacro
+[2.089s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/gripper/robotiq_2f_140.xacro
+[2.095s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/gripper/robotiq_2f_140_gripper.urdf.xacro
+[2.102s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/gripper/robotiq_2f_140_macro.urdf.xacro
+[2.109s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/gripper/ur_to_robotiq_adapter.urdf.xacro
+[2.116s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/inc/ur_common.xacro
+[2.123s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/inc/ur_transmissions.xacro
+[2.131s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/camera/abdo.mlp
+[2.138s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/camera/abdo_camera.stl
+[2.146s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/camera/cam_holder_basler.stl
+[2.153s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/camera/cam_holder_with_onrobot_dual.stl
+[2.160s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/camera/cam_holder_with_onrobot_single.stl
+[2.167s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/collision/2f_140/robotiq_2f_140_base_link.stl
+[2.175s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/collision/2f_140/robotiq_2f_140_coupling.stl
+[2.182s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/collision/2f_140/robotiq_2f_140_inner_finger.stl
+[2.189s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle.stl
+[2.196s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/collision/2f_140/robotiq_2f_140_outer_finger.stl
+[2.203s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle.stl
+[2.212s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/visual/2f_140/robotiq_2f_140_base_link.stl
+[2.219s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/visual/2f_140/robotiq_2f_140_coupling.stl
+[2.230s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/visual/2f_140/robotiq_2f_140_inner_finger.stl
+[2.239s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle.stl
+[2.248s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/visual/2f_140/robotiq_2f_140_outer_finger.stl
+[2.255s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle.stl
+[2.262s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/my_world.urdf.xacro
+[2.269s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_ur_config/urdf/original.urdf.xacro
+[2.276s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_moveit_config/moveit_controllers/joint_limits.yaml
+[2.284s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_moveit_config/moveit_controllers/kinematics.yaml
+[2.293s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_moveit_config/moveit_controllers/moveit_controllers.yaml
+[2.300s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_moveit_config/moveit_controllers/ompl_planning.yaml
+[2.309s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_moveit_config/moveit_controllers/ur_servo.yaml
+[2.316s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_moveit_config/srdf/my_world.macro.srdf.xacro
+[2.324s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/my_moveit_config/srdf/my_world.srdf.xacro
+[2.331s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/ament_index/resource_index/package_run_dependencies/my_ur_driver
+[2.339s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/ament_index/resource_index/parent_prefix_path/my_ur_driver
+[2.347s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/environment/ament_prefix_path.sh
+[2.357s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/environment/ament_prefix_path.dsv
+[2.365s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/environment/path.sh
+[2.373s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/environment/path.dsv
+[2.382s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/local_setup.bash
+[2.392s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/local_setup.sh
+[2.399s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/local_setup.zsh
+[2.407s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/local_setup.dsv
+[2.414s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/package.dsv
+[2.422s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/ament_index/resource_index/packages/my_ur_driver
+[2.430s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/cmake/my_ur_driverConfig.cmake
+[2.438s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/cmake/my_ur_driverConfig-version.cmake
+[2.446s] -- Symlinking: /home/ani/yc_ws/src/install/my_ur_driver/share/my_ur_driver/package.xml
+[2.456s] Invoked command in '/home/ani/yc_ws/src/build/my_ur_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/my_ur_driver

@@ -1,0 +1,15 @@
+source;share/find_grasp/hook/path.ps1
+source;share/find_grasp/hook/path.dsv
+source;share/find_grasp/hook/path.sh
+source;share/find_grasp/hook/pythonpath.ps1
+source;share/find_grasp/hook/pythonpath.dsv
+source;share/find_grasp/hook/pythonpath.sh
+source;share/find_grasp/hook/pythonscriptspath.ps1
+source;share/find_grasp/hook/pythonscriptspath.dsv
+source;share/find_grasp/hook/pythonscriptspath.sh
+source;share/find_grasp/hook/ament_prefix_path.ps1
+source;share/find_grasp/hook/ament_prefix_path.dsv
+source;share/find_grasp/hook/ament_prefix_path.sh
+source;../../build/find_grasp/share/find_grasp/hook/pythonpath_develop.ps1
+source;../../build/find_grasp/share/find_grasp/hook/pythonpath_develop.dsv
+source;../../build/find_grasp/share/find_grasp/hook/pythonpath_develop.sh

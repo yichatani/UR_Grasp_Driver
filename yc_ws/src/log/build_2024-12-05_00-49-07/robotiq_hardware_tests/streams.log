@@ -1,0 +1,61 @@
+[0.008s] Invoking command in '/home/ani/yc_ws/src/build/robotiq_hardware_tests': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/robotiq_driver/lib:/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_hardware_tests -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/src/install/robotiq_hardware_tests
+[0.053s] -- The CXX compiler identification is GNU 11.4.0
+[0.058s] -- Detecting CXX compiler ABI info
+[0.113s] -- Detecting CXX compiler ABI info - done
+[0.120s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.120s] -- Detecting CXX compile features
+[0.120s] -- Detecting CXX compile features - done
+[0.123s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.223s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.262s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.294s] -- Found hardware_interface: 2.43.1 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.326s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.330s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.336s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.344s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.355s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.497s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.499s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.517s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.557s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.559s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.570s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.572s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.579s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.586s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.594s] -- Looking for C++ include pthread.h
+[0.656s] -- Looking for C++ include pthread.h - found
+[0.656s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.727s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.728s] -- Found Threads: TRUE  
+[0.760s] -- Found serial: 1.2.1 (/home/ani/yc_ws/src/install/serial/share/serial/cmake)
+[0.761s] -- Found robotiq_driver: 0.0.1 (/home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake)
+[0.813s] -- Configuring done
+[0.833s] -- Generating done
+[0.837s] -- Build files have been written to: /home/ani/yc_ws/src/build/robotiq_hardware_tests
+[0.845s] Invoked command in '/home/ani/yc_ws/src/build/robotiq_hardware_tests' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/robotiq_driver/lib:/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_hardware_tests -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/src/install/robotiq_hardware_tests
+[0.846s] Invoking command in '/home/ani/yc_ws/src/build/robotiq_hardware_tests': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/robotiq_driver/lib:/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ani/yc_ws/src/build/robotiq_hardware_tests -- -j12 -l12
+[0.882s] [ 66%] [32mBuilding CXX object CMakeFiles/full_test.dir/src/gripper_interface_test.cpp.o[0m
+[0.882s] [ 66%] [32mBuilding CXX object CMakeFiles/full_test.dir/src/command_line_utility.cpp.o[0m
+[1.466s] [100%] [32m[1mLinking CXX executable full_test[0m
+[1.574s] [100%] Built target full_test
+[1.582s] Invoked command in '/home/ani/yc_ws/src/build/robotiq_hardware_tests' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/robotiq_driver/lib:/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ani/yc_ws/src/build/robotiq_hardware_tests -- -j12 -l12
+[1.583s] Invoking command in '/home/ani/yc_ws/src/build/robotiq_hardware_tests': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/robotiq_driver/lib:/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ani/yc_ws/src/build/robotiq_hardware_tests
+[1.588s] -- Install configuration: ""
+[1.588s] -- Execute custom install script
+[1.588s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/ament_index/resource_index/package_run_dependencies/robotiq_hardware_tests
+[1.595s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/ament_index/resource_index/parent_prefix_path/robotiq_hardware_tests
+[1.601s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/environment/ament_prefix_path.sh
+[1.607s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/environment/ament_prefix_path.dsv
+[1.613s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/environment/path.sh
+[1.619s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/environment/path.dsv
+[1.625s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/local_setup.bash
+[1.631s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/local_setup.sh
+[1.637s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/local_setup.zsh
+[1.643s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/local_setup.dsv
+[1.649s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.dsv
+[1.655s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/ament_index/resource_index/packages/robotiq_hardware_tests
+[1.662s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/cmake/robotiq_hardware_testsConfig.cmake
+[1.668s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/cmake/robotiq_hardware_testsConfig-version.cmake
+[1.673s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_hardware_tests/share/robotiq_hardware_tests/package.xml
+[1.682s] Invoked command in '/home/ani/yc_ws/src/build/robotiq_hardware_tests' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/robotiq_driver:/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/robotiq_driver/lib:/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ani/yc_ws/src/build/robotiq_hardware_tests

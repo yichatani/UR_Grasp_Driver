@@ -1,0 +1,13 @@
+package.xml
+setup.py
+find_grasp/__init__.py
+find_grasp/inference.py
+find_grasp.egg-info/PKG-INFO
+find_grasp.egg-info/SOURCES.txt
+find_grasp.egg-info/dependency_links.txt
+find_grasp.egg-info/entry_points.txt
+find_grasp.egg-info/requires.txt
+find_grasp.egg-info/top_level.txt
+find_grasp.egg-info/zip-safe
+launch/coordinator_launch.py
+resource/find_grasp

@@ -1,0 +1,1 @@
+Invoking command in '/home/ani/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/ur_calibration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/ur_calibration

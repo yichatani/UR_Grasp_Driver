@@ -316,8 +316,8 @@ ament_cmake_symlink_install_files("/home/ani/yc_ws/src/gripper/robotiq_controlle
 # install(DIRECTORY "include/" "DESTINATION" "include")
 ament_cmake_symlink_install_directory("/home/ani/yc_ws/src/gripper/robotiq_controllers" DIRECTORY "include/" "DESTINATION" "include")
 
-# install(FILES "/usr/lib/python3/dist-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/robotiq_controllers/environment")
-ament_cmake_symlink_install_files("/home/ani/yc_ws/src/gripper/robotiq_controllers" FILES "/usr/lib/python3/dist-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/robotiq_controllers/environment")
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/robotiq_controllers/environment")
+ament_cmake_symlink_install_files("/home/ani/yc_ws/src/gripper/robotiq_controllers" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/robotiq_controllers/environment")
 
 # install(FILES "/home/ani/yc_ws/build/robotiq_controllers/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/robotiq_controllers/environment")
 ament_cmake_symlink_install_files("/home/ani/yc_ws/src/gripper/robotiq_controllers" FILES "/home/ani/yc_ws/build/robotiq_controllers/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/robotiq_controllers/environment")

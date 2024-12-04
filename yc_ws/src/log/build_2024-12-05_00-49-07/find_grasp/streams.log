@@ -1,0 +1,26 @@
+[0.772s] Invoking command in '/home/ani/yc_ws/src/build/find_grasp': PYTHONPATH=/home/ani/yc_ws/src/build/find_grasp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/src/install/find_grasp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/src/build/find_grasp/build --no-deps symlink_data
+[1.044s] running develop
+[1.192s] running egg_info
+[1.192s] creating find_grasp.egg-info
+[1.192s] writing find_grasp.egg-info/PKG-INFO
+[1.192s] writing dependency_links to find_grasp.egg-info/dependency_links.txt
+[1.192s] writing entry points to find_grasp.egg-info/entry_points.txt
+[1.193s] writing requirements to find_grasp.egg-info/requires.txt
+[1.193s] writing top-level names to find_grasp.egg-info/top_level.txt
+[1.194s] writing manifest file 'find_grasp.egg-info/SOURCES.txt'
+[1.195s] reading manifest file 'find_grasp.egg-info/SOURCES.txt'
+[1.195s] writing manifest file 'find_grasp.egg-info/SOURCES.txt'
+[1.196s] running build_ext
+[1.196s] Creating /home/ani/yc_ws/src/install/find_grasp/lib/python3.10/site-packages/find-grasp.egg-link (link to .)
+[1.196s] Installing inference script to /home/ani/yc_ws/src/install/find_grasp/bin
+[1.197s] 
+[1.197s] Installed /home/ani/yc_ws/src/build/find_grasp
+[1.197s] running symlink_data
+[1.197s] creating /home/ani/yc_ws/src/install/find_grasp/share/ament_index
+[1.197s] creating /home/ani/yc_ws/src/install/find_grasp/share/ament_index/resource_index
+[1.197s] creating /home/ani/yc_ws/src/install/find_grasp/share/ament_index/resource_index/packages
+[1.197s] symbolically linking /home/ani/yc_ws/src/build/find_grasp/resource/find_grasp -> /home/ani/yc_ws/src/install/find_grasp/share/ament_index/resource_index/packages
+[1.197s] symbolically linking /home/ani/yc_ws/src/build/find_grasp/package.xml -> /home/ani/yc_ws/src/install/find_grasp/share/find_grasp
+[1.197s] creating /home/ani/yc_ws/src/install/find_grasp/share/find_grasp/launch
+[1.197s] symbolically linking /home/ani/yc_ws/src/build/find_grasp/launch/coordinator_launch.py -> /home/ani/yc_ws/src/install/find_grasp/share/find_grasp/launch
+[1.221s] Invoked command in '/home/ani/yc_ws/src/build/find_grasp' returned '0': PYTHONPATH=/home/ani/yc_ws/src/build/find_grasp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/src/install/find_grasp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/src/build/find_grasp/build --no-deps symlink_data

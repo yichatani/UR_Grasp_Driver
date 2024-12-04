@@ -1,1 +1,1 @@
-/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/home/ani/yc_ws/install/pilz_industrial_motion_planner_testutils:/home/ani/yc_ws/install/my_ur_driver:/home/ani/yc_ws/install/app2:/home/ani/yc_ws/install/app:/opt/ros/humble
+/home/ani/yc_ws/install/robotiq_driver:/home/ani/yc_ws/install/serial:/opt/ros/humble

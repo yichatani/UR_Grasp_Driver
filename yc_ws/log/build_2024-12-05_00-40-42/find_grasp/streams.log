@@ -1,0 +1,20 @@
+[0.663s] Invoking command in '/home/ani/yc_ws/build/find_grasp': PYTHONPATH=/home/ani/yc_ws/build/find_grasp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/find_grasp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/find_grasp/build --no-deps symlink_data
+[0.840s] running develop
+[0.957s] running egg_info
+[0.958s] writing find_grasp.egg-info/PKG-INFO
+[0.958s] writing dependency_links to find_grasp.egg-info/dependency_links.txt
+[0.958s] writing entry points to find_grasp.egg-info/entry_points.txt
+[0.958s] writing requirements to find_grasp.egg-info/requires.txt
+[0.958s] writing top-level names to find_grasp.egg-info/top_level.txt
+[0.960s] reading manifest file 'find_grasp.egg-info/SOURCES.txt'
+[0.960s] writing manifest file 'find_grasp.egg-info/SOURCES.txt'
+[0.961s] running build_ext
+[0.961s] Creating /home/ani/yc_ws/install/find_grasp/lib/python3.10/site-packages/find-grasp.egg-link (link to .)
+[0.962s] Installing inference script to /home/ani/yc_ws/install/find_grasp/bin
+[0.962s] 
+[0.962s] Installed /home/ani/yc_ws/build/find_grasp
+[0.962s] running symlink_data
+[0.962s] creating /home/ani/yc_ws/install/find_grasp/share/ament_index
+[0.962s] creating /home/ani/yc_ws/install/find_grasp/share/ament_index/resource_index
+[0.962s] creating /home/ani/yc_ws/install/find_grasp/share/ament_index/resource_index/packages
+[0.962s] error: can't copy '/home/ani/yc_ws/build/find_grasp/resource/find_grasp': doesn't exist or not a regular file

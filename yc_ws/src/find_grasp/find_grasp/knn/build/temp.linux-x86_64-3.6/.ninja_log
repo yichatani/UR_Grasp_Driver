@@ -1,0 +1,4 @@
+# ninja log v5
+0	541	1719377807	/home/zhy/Grasp_pointcloud/knn/build/temp.linux-x86_64-3.6/home/zhy/Grasp_pointcloud/knn/src/cuda/knn.o	97157fd55a5cedbd
+0	7954	1719377815	/home/zhy/Grasp_pointcloud/knn/build/temp.linux-x86_64-3.6/home/zhy/Grasp_pointcloud/knn/src/cpu/knn_cpu.o	845bdc801ff6dd8b
+0	14493	1719377821	/home/zhy/Grasp_pointcloud/knn/build/temp.linux-x86_64-3.6/home/zhy/Grasp_pointcloud/knn/src/vision.o	3af0b6c076423ae9

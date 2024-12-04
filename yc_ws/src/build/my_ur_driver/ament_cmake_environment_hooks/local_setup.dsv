@@ -1,0 +1,2 @@
+source;share/my_ur_driver/environment/ament_prefix_path.sh
+source;share/my_ur_driver/environment/path.sh

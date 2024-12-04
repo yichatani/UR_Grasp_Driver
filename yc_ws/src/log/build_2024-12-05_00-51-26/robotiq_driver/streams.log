@@ -1,0 +1,62 @@
+[0.009s] Invoking command in '/home/ani/yc_ws/src/build/robotiq_driver': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ani/yc_ws/src/build/robotiq_driver -- -j12 -l12
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target robotiq_driver[0m
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target gmock_main[0m
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[0.062s] [  8%] Built target gmock_main
+[0.064s] [ 20%] Built target gmock
+[0.077s] [ 58%] Built target robotiq_driver
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target test_default_serial_factory[0m
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target test_crc_utils[0m
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target test_data_utils[0m
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target test_default_driver_factory[0m
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target test_robotiq_gripper_hardware_interface[0m
+[0.103s] [ 66%] Built target test_default_serial_factory
+[0.105s] [ 75%] Built target test_crc_utils
+[0.105s] [ 83%] Built target test_data_utils
+[0.111s] [ 91%] Built target test_default_driver_factory
+[0.112s] [100%] Built target test_robotiq_gripper_hardware_interface
+[0.128s] Invoked command in '/home/ani/yc_ws/src/build/robotiq_driver' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ani/yc_ws/src/build/robotiq_driver -- -j12 -l12
+[0.129s] Invoking command in '/home/ani/yc_ws/src/build/robotiq_driver': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ani/yc_ws/src/build/robotiq_driver
+[0.131s] -- Install configuration: ""
+[0.131s] -- Execute custom install script
+[0.131s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver//hardware_interface_plugin.xml
+[0.131s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/environment/library_path.sh
+[0.131s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/environment/library_path.dsv
+[0.131s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/crc_utils.hpp
+[0.131s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/data_utils.hpp
+[0.131s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/default_driver.hpp
+[0.131s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/default_driver_factory.hpp
+[0.131s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/default_serial.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/default_serial_factory.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/driver.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/driver_exception.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/driver_factory.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/fake/fake_driver.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/hardware_interface.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/serial.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/serial_factory.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/include/robotiq_driver/visibility_control.hpp
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/ament_index/resource_index/package_run_dependencies/robotiq_driver
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/ament_index/resource_index/parent_prefix_path/robotiq_driver
+[0.132s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/environment/ament_prefix_path.sh
+[0.133s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/environment/ament_prefix_path.dsv
+[0.134s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/environment/path.sh
+[0.134s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/environment/path.dsv
+[0.134s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/local_setup.bash
+[0.134s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/local_setup.sh
+[0.134s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/local_setup.zsh
+[0.134s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/local_setup.dsv
+[0.134s] -- Symlinking: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/package.dsv
+[0.140s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/ament_index/resource_index/packages/robotiq_driver
+[0.140s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/robotiq_driver
+[0.140s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake/ament_cmake_export_targets-extras.cmake
+[0.141s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.141s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.141s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[0.141s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driverConfig.cmake
+[0.141s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driverConfig-version.cmake
+[0.141s] -- Up-to-date symlink: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/package.xml
+[0.141s] -- Up-to-date: /home/ani/yc_ws/src/install/robotiq_driver/lib/librobotiq_driver.so
+[0.141s] -- Up-to-date: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driver_targetsExport.cmake
+[0.141s] -- Up-to-date: /home/ani/yc_ws/src/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driver_targetsExport-noconfig.cmake
+[0.154s] Invoked command in '/home/ani/yc_ws/src/build/robotiq_driver' returned '0': AMENT_PREFIX_PATH=/home/ani/yc_ws/src/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ani/yc_ws/src/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/ani/yc_ws/src/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ani/yc_ws/src/build/robotiq_driver

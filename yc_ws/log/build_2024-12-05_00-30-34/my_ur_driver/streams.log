@@ -1,0 +1,54 @@
+[0.362s] Invoking command in '/home/ani/yc_ws/build/my_ur_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/my_ur_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/my_ur_driver
+[0.406s] -- The C compiler identification is GNU 11.4.0
+[0.452s] -- The CXX compiler identification is GNU 11.4.0
+[0.459s] -- Detecting C compiler ABI info
+[0.514s] -- Detecting C compiler ABI info - done
+[0.522s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.522s] -- Detecting C compile features
+[0.523s] -- Detecting C compile features - done
+[0.532s] -- Detecting CXX compiler ABI info
+[0.606s] -- Detecting CXX compiler ABI info - done
+[0.616s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.616s] -- Detecting CXX compile features
+[0.616s] -- Detecting CXX compile features - done
+[0.619s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.756s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.817s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.841s] -- Found ur_robot_driver: 2.2.16 (/opt/ros/humble/share/ur_robot_driver/cmake)
+[0.883s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.891s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.899s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.912s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.930s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.071s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.073s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.090s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.133s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.135s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.152s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.155s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.162s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.173s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.179s] -- Looking for pthread.h
+[1.234s] -- Looking for pthread.h - found
+[1.235s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.285s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.286s] -- Found Threads: TRUE  
+[1.381s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.382s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.382s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.436s] -- Found moveit_ros_move_group: 2.5.5 (/opt/ros/humble/share/moveit_ros_move_group/cmake)
+[1.452s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.466s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.475s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.487s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.552s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.670s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.682s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.738s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.739s] -- Added test 'lint_cmake' to check CMake code style
+[1.739s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.743s] -- Added test 'xmllint' to check XML markup files
+[1.744s] -- Configuring done
+[1.750s] -- Generating done
+[1.752s] -- Build files have been written to: /home/ani/yc_ws/build/my_ur_driver

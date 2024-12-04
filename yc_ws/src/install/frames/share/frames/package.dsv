@@ -1,0 +1,15 @@
+source;share/frames/hook/path.ps1
+source;share/frames/hook/path.dsv
+source;share/frames/hook/path.sh
+source;share/frames/hook/pythonpath.ps1
+source;share/frames/hook/pythonpath.dsv
+source;share/frames/hook/pythonpath.sh
+source;share/frames/hook/pythonscriptspath.ps1
+source;share/frames/hook/pythonscriptspath.dsv
+source;share/frames/hook/pythonscriptspath.sh
+source;share/frames/hook/ament_prefix_path.ps1
+source;share/frames/hook/ament_prefix_path.dsv
+source;share/frames/hook/ament_prefix_path.sh
+source;../../build/frames/share/frames/hook/pythonpath_develop.ps1
+source;../../build/frames/share/frames/hook/pythonpath_develop.dsv
+source;../../build/frames/share/frames/hook/pythonpath_develop.sh

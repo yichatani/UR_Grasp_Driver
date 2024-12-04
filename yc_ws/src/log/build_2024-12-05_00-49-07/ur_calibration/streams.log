@@ -1,0 +1,75 @@
+[0.368s] Invoking command in '/home/ani/yc_ws/src/build/ur_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/ur_calibration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/src/install/ur_calibration
+[0.415s] -- The C compiler identification is GNU 11.4.0
+[0.464s] -- The CXX compiler identification is GNU 11.4.0
+[0.471s] -- Detecting C compiler ABI info
+[0.541s] -- Detecting C compiler ABI info - done
+[0.551s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.551s] -- Detecting C compile features
+[0.553s] -- Detecting C compile features - done
+[0.554s] -- Detecting CXX compiler ABI info
+[0.641s] -- Detecting CXX compiler ABI info - done
+[0.651s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.651s] -- Detecting CXX compile features
+[0.651s] -- Detecting CXX compile features - done
+[0.654s] [0mur_calibration: You did not request a specific build type: selecting 'RelWithDebInfo'.[0m
+[0.654s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.806s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.868s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.897s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.940s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.947s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.954s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.967s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.978s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.009s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.011s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.081s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.108s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.149s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.157s] -- Looking for pthread.h
+[1.220s] -- Looking for pthread.h - found
+[1.221s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.284s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.285s] -- Found Threads: TRUE  
+[1.337s] -- Found ur_robot_driver: 2.2.16 (/opt/ros/humble/share/ur_robot_driver/cmake)
+[1.599s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.600s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.600s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.778s] -- Configuring done
+[1.826s] -- Generating done
+[1.832s] -- Build files have been written to: /home/ani/yc_ws/src/build/ur_calibration
+[1.843s] Invoked command in '/home/ani/yc_ws/src/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/ur_calibration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/src/install/ur_calibration
+[1.845s] Invoking command in '/home/ani/yc_ws/src/build/ur_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/ur_calibration -- -j12 -l12
+[1.888s] [ 20%] [32mBuilding CXX object CMakeFiles/calibration.dir/src/calibration.cpp.o[0m
+[1.890s] [ 40%] [32mBuilding CXX object CMakeFiles/calibration.dir/src/calibration_consumer.cpp.o[0m
+[9.348s] [ 60%] [32m[1mLinking CXX static library libcalibration.a[0m
+[9.451s] [ 60%] Built target calibration
+[9.466s] [ 80%] [32mBuilding CXX object CMakeFiles/calibration_correction.dir/src/calibration_correction.cpp.o[0m
+[13.910s] [100%] [32m[1mLinking CXX executable calibration_correction[0m
+[14.090s] [100%] Built target calibration_correction
+[14.098s] Invoked command in '/home/ani/yc_ws/src/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/src/build/ur_calibration -- -j12 -l12
+[14.099s] Invoking command in '/home/ani/yc_ws/src/build/ur_calibration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/ur_calibration
+[14.104s] -- Install configuration: "RelWithDebInfo"
+[14.104s] -- Execute custom install script
+[14.104s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/lib/ur_calibration/calibration_correction
+[14.110s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/include/ur_calibration/calibration.hpp
+[14.116s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/include/ur_calibration/calibration_consumer.hpp
+[14.123s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/launch/calibration_correction.launch.py
+[14.128s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ament_index/resource_index/package_run_dependencies/ur_calibration
+[14.134s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ament_index/resource_index/parent_prefix_path/ur_calibration
+[14.140s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/environment/ament_prefix_path.sh
+[14.145s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/environment/ament_prefix_path.dsv
+[14.151s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/environment/path.sh
+[14.156s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/environment/path.dsv
+[14.162s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/local_setup.bash
+[14.168s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/local_setup.sh
+[14.173s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/local_setup.zsh
+[14.179s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/local_setup.dsv
+[14.184s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/package.dsv
+[14.190s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ament_index/resource_index/packages/ur_calibration
+[14.196s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.202s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.208s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig.cmake
+[14.213s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake
+[14.219s] -- Symlinking: /home/ani/yc_ws/src/install/ur_calibration/share/ur_calibration/package.xml
+[14.226s] Invoked command in '/home/ani/yc_ws/src/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/src/build/ur_calibration
