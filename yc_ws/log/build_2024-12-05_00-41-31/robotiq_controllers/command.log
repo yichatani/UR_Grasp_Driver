@@ -1,4 +1,0 @@
-Invoking command in '/home/ani/yc_ws/build/robotiq_controllers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_controllers -- -j12 -l12
-Invoked command in '/home/ani/yc_ws/build/robotiq_controllers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_controllers -- -j12 -l12
-Invoking command in '/home/ani/yc_ws/build/robotiq_controllers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_controllers
-Invoked command in '/home/ani/yc_ws/build/robotiq_controllers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_controllers

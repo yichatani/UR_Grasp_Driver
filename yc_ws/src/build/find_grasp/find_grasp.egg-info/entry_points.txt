@@ -1,3 +1,0 @@
-[console_scripts]
-inference = scripts.inference:main
-

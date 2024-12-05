@@ -1,1 +1,0 @@
-/home/ani/yc_ws/src/find_grasp/setup.py

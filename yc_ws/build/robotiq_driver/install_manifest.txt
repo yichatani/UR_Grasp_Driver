@@ -1,3 +1,0 @@
-/home/ani/yc_ws/install/robotiq_driver/lib/librobotiq_driver.so
-/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driver_targetsExport.cmake
-/home/ani/yc_ws/install/robotiq_driver/share/robotiq_driver/cmake/robotiq_driver_targetsExport-noconfig.cmake

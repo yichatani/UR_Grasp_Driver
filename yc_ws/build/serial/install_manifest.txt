@@ -1,3 +1,0 @@
-/home/ani/yc_ws/install/serial/lib/libserial.a
-/home/ani/yc_ws/install/serial/share/serial/cmake/export_serialExport.cmake
-/home/ani/yc_ws/install/serial/share/serial/cmake/export_serialExport-noconfig.cmake

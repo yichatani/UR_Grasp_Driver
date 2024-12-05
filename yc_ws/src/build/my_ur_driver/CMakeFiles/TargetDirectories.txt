@@ -1,9 +1,0 @@
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/uninstall.dir
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/my_ur_driver_uninstall.dir
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/test.dir
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/edit_cache.dir
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/rebuild_cache.dir
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/list_install_components.dir
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/install.dir
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/install/local.dir
-/home/ani/yc_ws/src/build/my_ur_driver/CMakeFiles/install/strip.dir

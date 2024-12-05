@@ -1,9 +1,0 @@
-[0.818s] Invoking command in '/home/ani/yc_ws/build/find_grasp': PYTHONPATH=/home/ani/yc_ws/build/find_grasp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/yc_ws/install/find_grasp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/yc_ws/build/find_grasp/build --no-deps symlink_data
-[1.151s] running develop
-[1.409s] running egg_info
-[1.409s] writing find_grasp.egg-info/PKG-INFO
-[1.410s] writing dependency_links to find_grasp.egg-info/dependency_links.txt
-[1.410s] writing entry points to find_grasp.egg-info/entry_points.txt
-[1.410s] writing requirements to find_grasp.egg-info/requires.txt
-[1.410s] writing top-level names to find_grasp.egg-info/top_level.txt
-[1.414s] error: package directory 'find_grasp' does not exist

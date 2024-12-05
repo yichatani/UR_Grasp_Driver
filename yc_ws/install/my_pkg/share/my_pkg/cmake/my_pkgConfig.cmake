@@ -1,1 +1,0 @@
-/home/ani/yc_ws/build/my_pkg/ament_cmake_core/my_pkgConfig.cmake

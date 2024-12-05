@@ -1,5 +1,0 @@
-Invoking command in '/home/ani/yc_ws/build/robotiq_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/robotiq_description
-Invoked command in '/home/ani/yc_ws/build/robotiq_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ani/yc_ws/src/gripper/robotiq_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/yc_ws/install/robotiq_description
-Invoking command in '/home/ani/yc_ws/build/robotiq_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_description -- -j12 -l12
-Invoked command in '/home/ani/yc_ws/build/robotiq_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ani/yc_ws/build/robotiq_description -- -j12 -l12
-Invoking command in '/home/ani/yc_ws/build/robotiq_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ani/yc_ws/build/robotiq_description

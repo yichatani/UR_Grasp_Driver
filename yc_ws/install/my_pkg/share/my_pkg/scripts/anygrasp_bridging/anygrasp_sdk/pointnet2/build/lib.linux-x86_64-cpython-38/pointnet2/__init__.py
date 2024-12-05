@@ -1,1 +1,0 @@
-/home/ani/yc_ws/src/my_pkg/scripts/anygrasp_bridging/anygrasp_sdk/pointnet2/build/lib.linux-x86_64-cpython-38/pointnet2/__init__.py

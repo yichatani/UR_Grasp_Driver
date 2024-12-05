@@ -1,1 +1,0 @@
-/home/ani/yc_ws/src/my_pkg/scripts/calibration/00p_calib_step_01.py

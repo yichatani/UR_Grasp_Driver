@@ -1,7 +1,0 @@
-[ 20%] [32mBuilding CXX object CMakeFiles/calibration.dir/src/calibration.cpp.o[0m
-[ 40%] [32mBuilding CXX object CMakeFiles/calibration.dir/src/calibration_consumer.cpp.o[0m
-[ 60%] [32m[1mLinking CXX static library libcalibration.a[0m
-[ 60%] Built target calibration
-[ 80%] [32mBuilding CXX object CMakeFiles/calibration_correction.dir/src/calibration_correction.cpp.o[0m
-[100%] [32m[1mLinking CXX executable calibration_correction[0m
-[100%] Built target calibration_correction
