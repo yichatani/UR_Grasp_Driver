@@ -106,7 +106,7 @@ def launch_setup(context, *args, **kwargs):
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             # PathJoinSubstitution([FindPackageShare(description_package), "urdf", description_file]),
-            PathJoinSubstitution([FindPackageShare("my_ur_driver"), "my_ur_config/urdf/my_world.urdf.xacro"]),
+            PathJoinSubstitution([FindPackageShare("my_ur_driver"), "my_ur_config/urdf/my_world_with_gripper.urdf.xacro"]),
             " ",
             "robot_ip:=192.168.56.101",        ########################################
             " ",
@@ -157,7 +157,8 @@ def launch_setup(context, *args, **kwargs):
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             PathJoinSubstitution(
-               [FindPackageShare("my_ur_driver"), "my_moveit_config/srdf/my_world.srdf.xacro"]
+                #[FindPackageShare(moveit_config_package), "srdf", moveit_config_file]
+                [FindPackageShare("my_ur_driver"), "my_moveit_config/srdf/my_world_with_gripper.srdf.xacro"]
             ),
             " ",
             "name:=",
@@ -195,7 +196,11 @@ def launch_setup(context, *args, **kwargs):
     ompl_planning_pipeline_config["move_group"].update(ompl_planning_yaml)
 
     # Trajectory Execution Configuration
+    #controllers_yaml = load_yaml("ur_moveit_config", "config/controllers.yaml")
+
     controllers_yaml = load_yaml("my_ur_driver", "my_moveit_config/moveit_controllers/moveit_controllers.yaml")
+
+
 
     # the scaled_joint_trajectory_controller does not work on fake hardware
     change_controllers = context.perform_substitution(use_fake_hardware)
@@ -220,6 +225,8 @@ def launch_setup(context, *args, **kwargs):
         "publish_geometry_updates": True,
         "publish_state_updates": True,
         "publish_transforms_updates": True,
+        "publish_robot_description": True,
+        "publish_robot_description_semantic": True,
     }
 
     warehouse_ros_config = {
@@ -241,7 +248,7 @@ def launch_setup(context, *args, **kwargs):
             robot_description,
             robot_description_semantic,
             robot_description_kinematics,
-            robot_description_planning,
+            #robot_description_planning,
             ompl_planning_pipeline_config,
             trajectory_execution,
             moveit_controllers,
@@ -269,7 +276,7 @@ def launch_setup(context, *args, **kwargs):
             robot_description_semantic,
             ompl_planning_pipeline_config,
             robot_description_kinematics,
-            robot_description_planning,
+            #robot_description_planning,
             warehouse_ros_config,
         ],
     )

@@ -26,11 +26,12 @@ setup(
     #tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'coordinator2 = scripts.coordinator2:main',
-            'grasp_detector_controller = scripts.grasp_detector_controller:main',
-            'robot_controller_moveit = scripts.robot_controller_moveit:main',
-            'robot_controller_rtde = scripts.robot_controller_rtde:main',
-            'gripper_controller = scripts.gripper_controller:main',
+            'robot_grasp_coordinator = frames.robot_grasp_coordinator:main',
+            'grasp_detector = frames.grasp_detector:main',
+            'camera_controller = frames.camera_controller:main',
+            'grasp_pose_transformer = frames.grasp_pose_transformer:main',
+            'gripper_controller = frames.gripper_controller:main',
+            'myframe = frames.myframe:main',
             # Add other executables as needed
         ],
     },

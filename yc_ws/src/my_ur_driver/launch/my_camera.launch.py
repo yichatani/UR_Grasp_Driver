@@ -25,17 +25,13 @@ from launch.substitutions import LaunchConfiguration
 from my_libs.mycamera import Camera
 from pathlib import Path
 from ament_index_python.packages import get_package_prefix
-
 import os
-# Realsense_D455_CALIB_NAME = os.environ.get("CALIB_FOLDERNAME_Realsense_D455")
-# Realsense_D455_CALIB_NAME = "20240319_1553H"
-Realsense_D455_CALIB_NAME = "20241007_184458H"
 
 
 
 configurable_parameters = [
                         #    {'name': 'camera_name',                  'default': 'camera', 'description': 'camera unique name'},
-                           {'name': 'camera_name',                  'default': 'Realsense_D455', 'description': 'camera unique name'},
+                           {'name': 'camera_name',                  'default': 'D455', 'description': 'camera unique name'},
                            {'name': 'camera_namespace',             'default': '', 'description': 'namespace for camera'},
                            {'name': 'serial_no',                    'default': "''", 'description': 'choose device by serial number'},
                            {'name': 'usb_port_id',                  'default': "''", 'description': 'choose device by usb port id'},
@@ -121,7 +117,7 @@ def launch_setup(context, params, param_name_suffix=''):
                 )
     
     pkg_name = "my_ur_driver"
-    camera = Camera.load_from_path("Realsense_D455", Path(get_package_prefix(pkg_name)).parents[1].joinpath("src", pkg_name, "Realsense Calibration Data", "results.json"))
+    camera = Camera.load_from_path("D455", Path(get_package_prefix(pkg_name)).parents[1].joinpath("src", pkg_name, "realsense_calibration_data", "results.json"))
     values = [str(value) for value in camera.base_2_cam_transform]
     args_for_static_tf = [*values, "tool0", f"{camera.cam_name}_link"]
 
@@ -131,17 +127,6 @@ def launch_setup(context, params, param_name_suffix=''):
                 arguments = args_for_static_tf
                 )
     
-    # node_live_viewer = launch_ros.actions.Node(
-    #                     package="my_pkg",
-    #                     executable="live_viewer",
-    #                     parameters=[
-    #                         {"image": "/Realsense_D455/color/image_raw",
-    #                             "view_size": [1280, 720],
-    #                             "view_loc": [0, 0]}],
-    #                     emulate_tty=True
-    #                     )
-
-    # nodes_to_start = [node_realsense, node_static_tf_broadcast, node_live_viewer]
     nodes_to_start = [node_realsense, node_static_tf_broadcast]
     return nodes_to_start
     

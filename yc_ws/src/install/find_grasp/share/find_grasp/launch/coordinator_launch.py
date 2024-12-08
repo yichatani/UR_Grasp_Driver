@@ -1,1 +1,0 @@
-/home/ani/yc_ws/src/build/find_grasp/launch/coordinator_launch.py

@@ -1,1 +1,0 @@
-/home/ani/yc_ws/src/gripper/robotiq_controllers/include/robotiq_controllers/robotiq_activation_controller.hpp

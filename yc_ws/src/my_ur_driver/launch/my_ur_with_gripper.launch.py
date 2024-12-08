@@ -135,7 +135,7 @@ def launch_setup(context, *args, **kwargs):
         [
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
-            PathJoinSubstitution([FindPackageShare("my_ur_driver"), "my_ur_config/urdf/my_world.urdf.xacro"]),
+            PathJoinSubstitution([FindPackageShare("my_ur_driver"), "my_ur_config/urdf/my_world_with_gripper.urdf.xacro"]),
             " ",
             "robot_ip:=",
             robot_ip,
@@ -148,12 +148,6 @@ def launch_setup(context, *args, **kwargs):
             " ",
             "physical_params:=",
             physical_params,
-            " ",
-            "visual_params:=",
-            visual_params,
-            " ",
-            "safety_limits:=",
-            safety_limits,
             " ",
             "safety_pos_margin:=",
             safety_pos_margin,
@@ -232,11 +226,15 @@ def launch_setup(context, *args, **kwargs):
     robot_description = {"robot_description": robot_description_content}
 
     initial_joint_controllers = PathJoinSubstitution(
-        [FindPackageShare(runtime_config_package), "config", controllers_file]
+        #[FindPackageShare(runtime_config_package), "config", controllers_file]
+        [FindPackageShare("my_ur_driver"), "my_ur_config/ur_controllers/ur_controllers_with_gripper.yaml"]
+
     )
 
     rviz_config_file = PathJoinSubstitution(
         [FindPackageShare(description_package), "rviz", "view_robot.rviz"]
+        #[FindPackageShare("my_ur_driver"), "my_ur_config/rviz", "view_robot.rviz"]
+
     )
 
     # define update rate
@@ -345,25 +343,27 @@ def launch_setup(context, *args, **kwargs):
         arguments=["-d", rviz_config_file],
     )
 
-    camera =   Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='camera_to_robot_transform',
-            output='screen',
-            parameters=[],
-            remappings=[],
-            arguments=[
-                '0.0111',    # x translation (m)
-                '-0.0579',   # y translation (m)
-                '0.0732',    # z translation (m)
-                '-0.0061',   # x rotation (quaternion)
-                '-0.0002',   # y rotation (quaternion)
-                '0.0005',    # z rotation (quaternion)
-                '0.9999',    # w rotation (quaternion)
-                'base_link', # parent frame
-                'D455_link'  # child frame
-            ],
-        ),
+    # camera =   Node(
+    #         package='tf2_ros',
+    #         executable='static_transform_publisher',
+    #         name='camera_to_robot_transform',
+    #         output='screen',
+    #         parameters=[],
+    #         remappings=[],
+    #         arguments=[
+    #             '0.0111',    # x translation (m)
+    #             '-0.0579',   # y translation (m)
+    #             '0.0732',    # z translation (m)
+    #             '-0.0061',   # x rotation (quaternion)
+    #             '-0.0002',   # y rotation (quaternion)
+    #             '0.0005',    # z rotation (quaternion)
+    #             '0.9999',    # w rotation (quaternion)
+    #             'base_link', # parent frame
+    #             'Realsense_D455_link'  # child frame
+    #         ],
+    #     ),
+
+
 
     # Spawn controllers
     def controller_spawner(controllers, active=True):
@@ -386,6 +386,10 @@ def launch_setup(context, *args, **kwargs):
         "io_and_status_controller",
         "speed_scaling_state_broadcaster",
         "force_torque_sensor_broadcaster",
+        #"forward_position_controller",  # Previously inactive, now active
+        "robotiq_gripper_controller",
+        "robotiq_activation_controller",  # Start this controller as active
+
     ]
     controllers_inactive = ["forward_position_controller"]
 
@@ -420,6 +424,36 @@ def launch_setup(context, *args, **kwargs):
         condition=UnlessCondition(activate_joint_controller),
     )
 
+    gripper_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["robotiq_gripper_controller", "-c", "/controller_manager", controller_spawner_timeout,
+    ],
+    output="screen",
+    )
+
+    gripper_activation_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["robotiq_activation_controller", "-c", "/controller_manager", controller_spawner_timeout,
+    ],
+    output="screen",
+    )
+
+
+    gripper_joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "joint_state_broadcaster",
+            "--controller-manager",
+            "/controller_manager", controller_spawner_timeout,
+    ],
+    output="screen",
+    )
+
+
+
     nodes_to_start = [
         control_node,
         ur_control_node,
@@ -428,9 +462,12 @@ def launch_setup(context, *args, **kwargs):
         controller_stopper_node,
         urscript_interface,
         robot_state_publisher_node,
-        #rviz_node,
+        rviz_node,
         initial_joint_controller_spawner_stopped,
         initial_joint_controller_spawner_started,
+        gripper_controller_spawner,
+        gripper_joint_state_broadcaster_spawner,
+        gripper_activation_controller_spawner
     ] + controller_spawners
 
     return nodes_to_start

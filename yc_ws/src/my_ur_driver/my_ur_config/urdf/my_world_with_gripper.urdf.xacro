@@ -4,6 +4,12 @@
    <xacro:arg name="name" default="ur"/>
    <!-- import main macro -->
    <xacro:include filename="$(find ur_description)/urdf/ur_macro.xacro"/>
+
+
+   <xacro:include filename="$(find my_ur_driver)/my_ur_config/urdf/gripper/robotiq_2f_140.xacro" />
+   <xacro:include filename="$(find my_ur_driver)/my_ur_config/urdf/gripper/robotiq_2f_140_gripper.urdf.xacro" />
+   <xacro:include filename="$(find my_ur_driver)/my_ur_config/urdf/gripper/2f_140.ros2_control.xacro" />
+   <xacro:include filename="$(find my_ur_driver)/my_ur_config/urdf/gripper/ur_to_robotiq_adapter.urdf.xacro" />
    <!-- possible 'ur_type' values: ur3, ur3e, ur5, ur5e, ur10, ur10e, ur16e, ur20, ur30 -->
    <!-- the default value should raise an error in case this was called without defining the type -->
    <xacro:arg name="ur_type" default="ur10e"/>
@@ -55,7 +61,44 @@
 
 
    <!-- create link fixed to the "world" -->
-   <link name="world" /> 
+   <link name="world" />
+
+
+  <!-- for onrobot straight mode -->
+    <!-- 10mm cam_holder_thickness, 13mm quick change adapter thickness, xxmm from vgc10 base to suction tip-->
+
+
+      <link name="cam_holder_with_onrobot_single">
+      <inertial>
+        <origin xyz="0.00010121 -0.030402 0.046358" rpy="0 0 0" />
+        <!-- <origin xyz=".00121 -0.030402 0.046358" rpy="0 0 0" /> -->
+        <mass value="0.6381" />
+        <inertia ixx="0.00053122" ixy="-4.1332E-09" ixz="3.2568E-07" iyy="0.00043426" iyz="-1.2224E-05" izz="0.00056022" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://my_ur_driver/my_ur_config/urdf/meshes/camera/abdo_camera.stl" />
+        </geometry>
+        <material name="">
+          <color rgba="0.79216 0.81961 0.93333 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://my_ur_driver/my_ur_config/urdf/meshes/camera/abdo_camera.stl" />
+        </geometry>
+      </collision>
+    </link>
+
+
+    <joint name="tool0_2_cam_holder_with_onrobot_single" type="fixed">
+      <parent link="tool0" />
+      <child link="cam_holder_with_onrobot_single" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+
    <!-- arm -->
    <xacro:ur_robot
      name="$(arg name)"
@@ -120,58 +163,12 @@
     </gazebo>
   </xacro:if>
 
- <!-- for onrobot straight mode -->
-  <!-- 10mm cam_holder_thickness, 13mm quick change adapter thickness, xxmm from vgc10 base to suction tip-->
-  <link name="tcp_vgc10" />
-  <joint name="tool0_2_tcp_vgc10" type="fixed">
+ 
+  <!-- <joint name="robotiq_2f_140_fixed" type="fixed">
     <parent link="tool0" />
-    <child link="tcp_vgc10" />
-    <!-- <origin xyz="0 0 0.180" rpy="0 0 0" />   -->
-    <origin xyz="0 0 0.175" rpy="0 0 0" />  
-    <!-- unverified values -->
-  </joint>
-
-  <!-- for onrobot straight mode -->
-  <!-- 10mm cam_holder_thickness, 13mm quick change adapter thickness, 200mm from rg2 base to a logical finger pick point (not the extreme finger tip) -->
-  <link name="tcp_rg2" />
-  <joint name="tool0_2_tcp_rg2" type="fixed">
-    <parent link="tool0" />
-    <child link="tcp_rg2" />
-    <!-- <origin xyz="0 0 0.223" rpy="0 0 0" /> -->
-    <!-- <origin xyz="0 0 0.235" rpy="0 0 0" /> -->
-    <origin xyz="0 0 0.232" rpy="0 0 0" />
-  </joint>
-
-    <link name="cam_holder_with_onrobot_single">
-    <inertial>
-      <origin xyz="0.00010121 -0.030402 0.046358" rpy="0 0 0" />
-      <!-- <origin xyz=".00121 -0.030402 0.046358" rpy="0 0 0" /> -->
-      <mass value="0.6381" />
-      <inertia ixx="0.00053122" ixy="-4.1332E-09" ixz="3.2568E-07" iyy="0.00043426" iyz="-1.2224E-05" izz="0.00056022" />
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://my_ur_driver/my_ur_conifg/urdf/meshes/camera/abdo_camera.stl" />
-      </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://my_ur_driver/my_ur_conifgurdf/meshes/camera/abdo_camera.stl" />
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="tool0_2_cam_holder_with_onrobot_single" type="fixed">
-    <parent link="tool0" />
-    <child link="cam_holder_with_onrobot_single" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
+    <child link="robotiq_2f_140" />
+    <origin xyz="0 0 0.205" rpy="0 0 0" />
+  </joint> -->
 
 
     <!-- this part deals with the tcp end effector transform, not related to the visual/collision. -->

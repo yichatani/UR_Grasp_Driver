@@ -1,1 +1,0 @@
-/home/ani/yc_ws/src/my_pkg/scripts/anygrasp_bridging/anygrasp_sdk/pointnet2/pointnet2/_ext_src/src/group_points.cpp
