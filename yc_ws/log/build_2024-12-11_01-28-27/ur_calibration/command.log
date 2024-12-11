@@ -1,1 +1,0 @@
-Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/ur_calibration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/ur_calibration

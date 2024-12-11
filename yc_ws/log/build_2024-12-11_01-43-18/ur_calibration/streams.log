@@ -1,8 +1,0 @@
-[0.433s] Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --build /home/ani/ur_grasp_driver/yc_ws/build/ur_calibration -- -j12 -l12
-[0.468s] [ 20%] [32mBuilding CXX object CMakeFiles/calibration.dir/src/calibration.cpp.o[0m
-[0.470s] [ 40%] [32mBuilding CXX object CMakeFiles/calibration.dir/src/calibration_consumer.cpp.o[0m
-[6.011s] [ 60%] [32m[1mLinking CXX static library libcalibration.a[0m
-[6.115s] [ 60%] Built target calibration
-[6.131s] [ 80%] [32mBuilding CXX object CMakeFiles/calibration_correction.dir/src/calibration_correction.cpp.o[0m
-[10.255s] [100%] [32m[1mLinking CXX executable calibration_correction[0m
-[10.435s] [100%] Built target calibration_correction

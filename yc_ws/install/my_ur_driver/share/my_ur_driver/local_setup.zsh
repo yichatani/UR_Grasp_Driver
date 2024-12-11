@@ -1,1 +1,0 @@
-/home/ani/ur_grasp_driver/yc_ws/build/my_ur_driver/ament_cmake_environment_hooks/local_setup.zsh
