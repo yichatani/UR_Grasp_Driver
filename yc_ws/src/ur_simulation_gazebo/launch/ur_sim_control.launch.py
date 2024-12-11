@@ -27,7 +27,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 #
 # Author: Denis Stogl
-
+import os
 from launch import LaunchDescription
 from launch.actions import (
     DeclareLaunchArgument,
@@ -41,6 +41,8 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
+from launch_ros.parameter_descriptions import ParameterFile
+from launch.actions import SetEnvironmentVariable
 
 
 def launch_setup(context, *args, **kwargs):
@@ -58,24 +60,38 @@ def launch_setup(context, *args, **kwargs):
     prefix = LaunchConfiguration("prefix")
     start_joint_controller = LaunchConfiguration("start_joint_controller")
     initial_joint_controller = LaunchConfiguration("initial_joint_controller")
+    kinematics_params_file = LaunchConfiguration("kinematics_params_file")
     launch_rviz = LaunchConfiguration("launch_rviz")
     gazebo_gui = LaunchConfiguration("gazebo_gui")
 
     initial_joint_controllers = PathJoinSubstitution(
         [FindPackageShare(runtime_config_package), "config", controllers_file]
     )
+    if not os.path.exists(initial_joint_controllers.perform(context)):
+        raise FileNotFoundError(f"Controller configuration file not found: {initial_joint_controllers.perform(context)}")
 
     rviz_config_file = PathJoinSubstitution(
         [FindPackageShare(description_package), "rviz", "view_robot.rviz"]
     )
 
+    gazebo_ros2_control_params = {
+        "gazebo_ros2_control": {
+            "ros__parameters": {
+                "use_sim_time": True,
+                "type": "gazebo_ros2_control/GazeboSystem"
+            }
+        }
+    }
+
     robot_description_content = Command(
         [
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
+            # PathJoinSubstitution(
+            #     [FindPackageShare(description_package), "urdf", description_file]
+            # ),
             PathJoinSubstitution(
-                [FindPackageShare(description_package), "urdf", description_file]
-            ),
+                [FindPackageShare("my_ur_driver"), "my_ur_config/urdf/my_world.urdf.xacro"]),
             " ",
             "safety_limits:=",
             safety_limits,
@@ -95,13 +111,50 @@ def launch_setup(context, *args, **kwargs):
             "prefix:=",
             prefix,
             " ",
+            "kinematics_params:=",
+            kinematics_params_file,
+            " ",
+            "joint_limit_params:=",
+            PathJoinSubstitution(
+                [FindPackageShare(description_package), "config", ur_type, "joint_limits.yaml"]
+            ),
+            " ",
+            "physical_params:=",
+            PathJoinSubstitution(
+                [FindPackageShare(description_package), "config", ur_type, "physical_parameters.yaml"]
+            ),
+            " ",
+            "visual_params:=",
+            PathJoinSubstitution(
+                [FindPackageShare(description_package), "config", ur_type, "visual_parameters.yaml"]
+            ),
+            " ",
             "sim_gazebo:=true",
             " ",
             "simulation_controllers:=",
             initial_joint_controllers,
+            " ",
+            "use_gazebo_ros2_control:=true",
+            " ",
         ]
     )
     robot_description = {"robot_description": robot_description_content}
+
+
+    control_node = Node(
+        package="controller_manager",
+        executable="ros2_control_node",
+        parameters=[
+            robot_description,
+            gazebo_ros2_control_params,
+            {"use_sim_time": True},
+            ParameterFile(initial_joint_controllers, allow_substs=True),
+        ],
+        output="screen",
+        respawn=True,  # automaticly restart
+        respawn_delay=1.0,  
+    )
+
 
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
@@ -155,6 +208,14 @@ def launch_setup(context, *args, **kwargs):
         ),
         launch_arguments={
             "gui": gazebo_gui,
+            "server": "true",
+            "pause": "true",  # 
+            "verbose": "true",  # logs
+            "world": PathJoinSubstitution([
+                FindPackageShare("ur_simulation_gazebo"),
+                "worlds",
+                "ur_empty.world",
+            ]),
         }.items(),
     )
 
@@ -168,12 +229,13 @@ def launch_setup(context, *args, **kwargs):
     )
 
     nodes_to_start = [
+        gazebo,
         robot_state_publisher_node,
+        control_node,
         joint_state_broadcaster_spawner,
         delay_rviz_after_joint_state_broadcaster_spawner,
         initial_joint_controller_spawner_stopped,
         initial_joint_controller_spawner_started,
-        gazebo,
         gazebo_spawn_robot,
     ]
 
@@ -181,14 +243,31 @@ def launch_setup(context, *args, **kwargs):
 
 
 def generate_launch_description():
+
+    env_vars = [
+        SetEnvironmentVariable('IGN_IP', '127.0.0.1'),
+        SetEnvironmentVariable('GAZEBO_IP', '127.0.0.1'),
+    ]
+
     declared_arguments = []
     # UR specific arguments
+
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "kinematics_params_file",
+            default_value=PathJoinSubstitution(
+            [FindPackageShare("my_ur_driver"), "my_ur_config/ur_controllers/ur_calibration.yaml"]
+            ),
+            description="Actual config",
+        )
+    )   
+
     declared_arguments.append(
         DeclareLaunchArgument(
             "ur_type",
             description="Type/series of used UR robot.",
             choices=["ur3", "ur3e", "ur5", "ur5e", "ur10", "ur10e", "ur16e", "ur20", "ur30"],
-            default_value="ur5e",
+            default_value="ur10e",
         )
     )
     declared_arguments.append(
@@ -275,4 +354,6 @@ def generate_launch_description():
         )
     )
 
-    return LaunchDescription(declared_arguments + [OpaqueFunction(function=launch_setup)])
+    return LaunchDescription(env_vars + declared_arguments + [OpaqueFunction(function=launch_setup)])
+
+  

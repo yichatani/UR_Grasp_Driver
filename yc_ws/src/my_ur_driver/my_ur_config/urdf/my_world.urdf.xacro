@@ -152,7 +152,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://my_ur_driver/my_ur_conifg/urdf/meshes/camera/abdo_camera.stl" />
+        <mesh filename="package://my_ur_driver/my_ur_config/urdf/meshes/camera/abdo_camera.stl" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -161,7 +161,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://my_ur_driver/my_ur_conifgurdf/meshes/camera/abdo_camera.stl" />
+        <mesh filename="package://my_ur_driver/my_ur_config/urdf/meshes/camera/abdo_camera.stl" />
       </geometry>
     </collision>
   </link>

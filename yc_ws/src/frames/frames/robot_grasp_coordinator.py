@@ -24,6 +24,8 @@ from grasp_pose_transformer import GraspPoseTransformer
 from grasp_detector import GraspDetector
 from gripper_controller import GripperController
 from myframe import Myframe
+import os
+import re
 import sys
 import termios
 import tty
@@ -34,6 +36,187 @@ def to_radians(degrees):
     convertedRadians = [np.radians(angle) for angle in degrees]
     return convertedRadians
 
+
+class DataCollector:
+    def __init__(self, coordinator, output_dir, auto_episode=True):
+        
+        self._stop_event = threading.Event()
+        self.buffer = {
+            'timestamps': [],
+            'current_tcp_poses': [],      
+            'current_joint_positions': [], 
+            'current_joint_velocities': [],
+            'next_tcp_poses': [],         
+            'next_joint_positions': [],    
+            'next_joint_velocities': [],  
+            'gripper_states': [],
+            'rgb_images': [],
+            'depth_images': [],
+            #'pointclouds': []
+        }
+        self.previous_state = None  # To save the previous state
+        self.output_dir = output_dir
+        self.coordinator = coordinator
+        self.is_running = False
+        self.end_episode_n = self._get_latest_episode_number() if auto_episode else 0
+
+    def _get_latest_episode_number(self):
+        """
+        Get the latest episode number
+        
+        Returns:
+            int: Next available episode number
+        """
+        try:
+            os.makedirs(self.output_dir, exist_ok=True)
+            print(f"Using data collection directory: {self.output_dir}")
+            
+            # Get all episode directories
+            episode_dirs = [d for d in os.listdir(self.output_dir) 
+                           if os.path.isdir(os.path.join(self.output_dir, d)) 
+                           and d.startswith('episode_')]
+            
+            if not episode_dirs:
+                print("No existing episodes found, starting from 0")
+                return 0
+            
+            # Extract episode numbers
+            episode_numbers = []
+            pattern = re.compile(r'episode_(\d{4})')
+            
+            for dir_name in episode_dirs:
+                match = pattern.match(dir_name)
+                if match:
+                    try:
+                        number = int(match.group(1))
+                        episode_numbers.append(number)
+                    except ValueError:
+                        print(f"Warning: Invalid episode number format in directory {dir_name}")
+                        continue
+            
+            if not episode_numbers:
+                print("No valid episode numbers found, starting from 0")
+                return 0
+                
+            next_episode = max(episode_numbers) + 1
+            print(f"Continuing from episode {next_episode}")
+            return next_episode
+            
+        except Exception as e:
+            print(f"Error while getting episode number: {e}")
+            print("Falling back to episode 0")
+            return 0
+
+    def record_step(self):
+        """timestamps"""
+        timestamp = time.time()
+
+        #print("I am hereee")
+        
+        # robot state
+        try:
+            current_tcp_pose = self.coordinator.rtde_r.getActualTCPPose()
+            current_joint_pos = self.coordinator.rtde_r.getActualQ()
+            current_joint_vel = self.coordinator.rtde_r.getActualQd()
+        except Exception as e:
+            print(f"Error retrieving robot state: {e}")
+            return
+        current_state = {
+            'timestamp': timestamp,
+            'tcp_pose': current_tcp_pose,
+            'joint_position': current_joint_pos,
+            'joint_velocity': current_joint_vel
+        }
+        #####################   need add gripper_state
+        
+        # handle vision
+        vision_data = {}
+        while not self.coordinator.camera_controller.data_queue.empty():
+            #print("helloo")
+            #print(self.coordinator.camera_controller.data_queue.get())
+            data_type, data, ts = self.coordinator.camera_controller.data_queue.get()
+
+            vision_data[data_type] = (data, ts)
+        
+        if self.previous_state is not None:
+            #print("abdoooo")
+            self.buffer['timestamps'].append(self.previous_state['timestamp'])
+            # States
+            self.buffer['current_tcp_poses'].append(self.previous_state['tcp_pose'])
+            self.buffer['current_joint_positions'].append(self.previous_state['joint_position'])
+            self.buffer['current_joint_velocities'].append(self.previous_state['joint_velocity'])
+            
+            # Actions
+            self.buffer['next_tcp_poses'].append(current_tcp_pose)
+            self.buffer['next_joint_positions'].append(current_joint_pos)
+            self.buffer['next_joint_velocities'].append(current_joint_vel)
+            
+            # Observations
+
+            #print(vision_data.get('rgb', (None, timestamp))[0])
+            self.buffer['rgb_images'].append(vision_data.get('rgb', (None, timestamp))[0])
+            self.buffer['depth_images'].append(vision_data.get('depth', (None, timestamp))[0])
+            #self.buffer['pointclouds'].append(vision_data.get('pointcloud', (None, timestamp))[0])
+        
+        # update
+        self.previous_state = current_state
+    
+    def end_episode(self):
+        # leave the last step away, for no next step
+        episode_dir = os.path.join(self.output_dir, f'episode_{self.end_episode_n:04d}')
+        os.makedirs(episode_dir, exist_ok=True)
+
+        #print("checkhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhk")
+
+        #exit()
+
+        # save as numpy
+        np.savez_compressed(
+            os.path.join(episode_dir, 'episode_data.npz'),
+            timestamps=np.array(self.buffer['timestamps']),
+            # current state
+            current_tcp_poses=np.array(self.buffer['current_tcp_poses']),
+            current_joint_positions=np.array(self.buffer['current_joint_positions']),
+            current_joint_velocities=np.array(self.buffer['current_joint_velocities']),
+            # action
+            target_tcp_poses=np.array(self.buffer['next_tcp_poses']),
+            target_joint_positions=np.array(self.buffer['next_joint_positions']),
+            target_joint_velocities=np.array(self.buffer['next_joint_velocities'])
+        )
+        
+        # observation
+        #if self.buffer['rgb_images'] is not None:
+
+        #print("checkhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhk")
+        np.save(os.path.join(episode_dir, 'rgb_images.npy'), 
+                np.array(self.buffer['rgb_images']))
+        np.save(os.path.join(episode_dir, 'depth_images.npy'), 
+                np.array(self.buffer['depth_images']))
+        # np.save(os.path.join(episode_dir, 'pointclouds.npy'), 
+        #        np.array(self.buffer['pointclouds']))
+        
+        # save metadata
+        metadata = {
+            'episode_id': self.end_episode_n,
+            'start_time': self.buffer['timestamps'][0],
+            'end_time': self.buffer['timestamps'][-1],
+            'num_frames': len(self.buffer['timestamps'])
+        }
+        #np.save(os.path.join(episode_dir, 'metadata.npy'), metadata)
+        np.save(os.path.join(episode_dir, 'metadata.npy'), np.array([metadata]))
+        return
+
+    def stop(self):
+        """stop"""
+        self._stop_event.set()
+        self.is_running = False
+
+    def run(self):
+        """record"""
+        self.is_running = True
+        while self.is_running and not self._stop_event.is_set():
+            self.record_step()
+            time.sleep(0.1)  # control frequency
 
 
 class RobotGraspCoordinator(Node):
@@ -190,7 +373,12 @@ class RobotGraspCoordinator(Node):
                 return False
             
             if self.executionType == "Execute":
-
+                
+                ### Begin record data
+                self.record = DataCollector(self, output_dir="./collected_data", episode_n = 0,)
+                self.record_thread = threading.Thread(target=self.record.run)
+                self.record_thread.start()
+                ###
                 self.move_to_grasp()  
 
                 self.pick_object()
@@ -198,6 +386,13 @@ class RobotGraspCoordinator(Node):
                 self.move_to_release_position()
 
                 self.release_object()
+
+                ### Stop record data
+                self.record.stop()
+                if self.record_thread.is_alive():
+                    self.record_thread.join(timeout=5)
+                self.record.end_episode()
+                ###
 
                 self.move_to_home()
 
@@ -432,9 +627,9 @@ class RobotGraspCoordinator(Node):
                 #time.sleep(1)
                 # # Wait for threads to finish
                 if self.grasp_thread.is_alive():
-                    self.grasp_thread.join()
+                      self.grasp_thread.join()
                 #if self.key_listener_thread.is_alive():
-                #     self.key_listener_thread.join()
+                #   self.key_listener_thread.join()
 
             self.get_logger().info('Shutting down the Robot Grasp Coordinator Node ....\n')
             # Disconnect RTDE interfaces

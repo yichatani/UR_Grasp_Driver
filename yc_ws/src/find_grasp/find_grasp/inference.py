@@ -33,7 +33,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--infer', action='store_true', default=False)
 parser.add_argument('--eval', action='store_true', default=False)
 parser.add_argument('--log_dir', default=os.path.join(ROOT_DIR + '/logs/log/combined'), required=False)
-parser.add_argument('--chosen_model', default='1billion.tar', required=False)
+parser.add_argument('--chosen_model', default='mega.tar', required=False)
 parser.add_argument('--collision_thresh', type=float, default=0.01,
                     help='Collision Threshold in collision detection [default: 0.01]')
 parser.add_argument('--epoch_range', type=list, default=[79], help='epochs to infer&eval')
@@ -63,7 +63,7 @@ def my_worker_init_fn(worker_id):
 
 
 def get_my_data(return_raw_cloud = False):
-    img_num = 1
+    img_num = 2
     depth = np.array(Image.open(os.path.join(my_depth_path, f'depth_image_{str(img_num).zfill(2)}.png')))
     color = np.array(Image.open(os.path.join(my_color_path, 
                                              f'color_image_{str(img_num).zfill(2)}.png')),dtype=np.float32) / 255.0
@@ -92,7 +92,7 @@ def get_my_data(return_raw_cloud = False):
     #########
     # color = cv2.cvtColor(color, cv2.COLOR_BGR2RGB).astype(np.float32)
     #########
-    
+
     cloud = create_point_cloud_from_depth_image(depth, camera, organized=True)
     cloud_masked = cloud.reshape(-1,3)
 

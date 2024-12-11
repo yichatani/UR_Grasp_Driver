@@ -4,6 +4,9 @@ project(ur_simulation_gazebo)
 find_package(ament_cmake REQUIRED)
 
 install(DIRECTORY config launch
+  launch
+  config
+  worlds
   DESTINATION share/${PROJECT_NAME}
 )
 
