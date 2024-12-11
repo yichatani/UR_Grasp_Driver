@@ -1,0 +1,13 @@
+[0.432s] Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/serial
+[0.441s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.563s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.631s] -- Configuring done
+[0.635s] -- Generating done
+[0.636s] -- Build files have been written to: /home/ani/ur_grasp_driver/yc_ws/build/serial
+[0.639s] Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/serial
+[0.640s] Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --build /home/ani/ur_grasp_driver/yc_ws/build/serial -- -j12 -l12
+[0.675s] [ 25%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[0.677s] [ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[0.677s] [ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[1.156s] [100%] [32m[1mLinking CXX static library libserial.a[0m
+[1.209s] [100%] Built target serial

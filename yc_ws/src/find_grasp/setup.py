@@ -1,4 +1,4 @@
-# app/setup.py
+# find_grasp/setup.py
 from setuptools import setup
 import os
 from glob import glob
@@ -26,7 +26,7 @@ setup(
     #tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'inference = scripts.inference:main',
+            'inference = find_grasp.inference:main',
             # Add other executables as needed
         ],
     },

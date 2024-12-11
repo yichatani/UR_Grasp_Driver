@@ -1,4 +1,3 @@
-# app/setup.py
 from setuptools import setup
 import os
 from glob import glob

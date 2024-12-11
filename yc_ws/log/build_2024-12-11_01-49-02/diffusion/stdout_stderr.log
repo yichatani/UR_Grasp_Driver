@@ -1,0 +1,27 @@
+running develop
+Traceback (most recent call last):
+  File "/home/ani/ur_grasp_driver/yc_ws/build/diffusion/setup.py", line 8, in <module>
+    setup(
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 117, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 183, in setup
+    return run_commands(dist)
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 199, in run_commands
+    dist.run_commands()
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+    self.run_command(cmd)
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/dist.py", line 995, in run_command
+    super().run_command(command)
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 972, in run_command
+    cmd_obj.ensure_finalized()
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 111, in ensure_finalized
+    self.finalize_options()
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/command/develop.py", line 51, in finalize_options
+    easy_install.finalize_options(self)
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py", line 251, in finalize_options
+    'dist_fullname': self.distribution.get_fullname(),
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 267, in get_fullname
+    return _distribution_fullname(self.get_name(), self.get_version())
+  File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 285, in _distribution_fullname
+    canonicalize_version(version, strip_trailing_zero=False),
+TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'

@@ -1,0 +1,332 @@
+[0.067s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink']
+[0.067s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x708d28215750>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x708d283a9de0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x708d283a9de0>>)
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.099s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ani/ur_grasp_driver/yc_ws'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ignore'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ignore_ament_install'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['colcon_pkg']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'colcon_pkg'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['colcon_meta']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'colcon_meta'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['ros']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ros'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['cmake', 'python']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'cmake'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'python'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['python_setup_py']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'python_setup_py'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'ignore'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'ignore_ament_install'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extensions ['colcon_pkg']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'colcon_pkg'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extensions ['colcon_meta']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'colcon_meta'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extensions ['ros']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'ros'
+[0.105s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo' with type 'ros.ament_cmake' and name 'ur_simulation_gazebo'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extensions ['ignore', 'ignore_ament_install']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extension 'ignore'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extension 'ignore_ament_install'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extensions ['colcon_pkg']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extension 'colcon_pkg'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extensions ['colcon_meta']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extension 'colcon_meta'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extensions ['ros']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffusion) by extension 'ros'
+[0.105s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffusion' with type 'ros.ament_python' and name 'diffusion'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extension 'ignore_ament_install'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extensions ['colcon_pkg']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extension 'colcon_pkg'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extensions ['colcon_meta']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extension 'colcon_meta'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extensions ['ros']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/find_grasp) by extension 'ros'
+[0.107s] DEBUG:colcon.colcon_core.package_identification:Package 'src/find_grasp' with type 'ros.ament_python' and name 'find_grasp'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extensions ['ignore', 'ignore_ament_install']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extension 'ignore'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extension 'ignore_ament_install'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extensions ['colcon_pkg']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extension 'colcon_pkg'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extensions ['colcon_meta']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extension 'colcon_meta'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extensions ['ros']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/frames) by extension 'ros'
+[0.108s] DEBUG:colcon.colcon_core.package_identification:Package 'src/frames' with type 'ros.ament_python' and name 'frames'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'ignore'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'ignore_ament_install'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extensions ['colcon_pkg']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'colcon_pkg'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extensions ['colcon_meta']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'colcon_meta'
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extensions ['ros']
+[0.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_ur_driver) by extension 'ros'
+[0.109s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_ur_driver' with type 'ros.ament_cmake' and name 'my_ur_driver'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.109s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'ignore'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'ignore_ament_install'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extensions ['colcon_pkg']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'colcon_pkg'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extensions ['colcon_meta']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'colcon_meta'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extensions ['ros']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_calibration) by extension 'ros'
+[0.110s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_calibration' with type 'ros.ament_cmake' and name 'ur_calibration'
+[0.110s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.110s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.110s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.110s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.110s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.124s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.124s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ani/ur_grasp_driver/yc_ws/install/ur_calibration' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.124s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ani/ur_grasp_driver/yc_ws/install/my_ur_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.124s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.124s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ani/ur_grasp_driver/yc_ws/install/ur_calibration' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.124s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ani/ur_grasp_driver/yc_ws/install/my_ur_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.124s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ani/ur_grasp_driver/yc_ws/install
+[0.126s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 356 installed packages in /opt/ros/humble
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'cmake_target' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'cmake_clean_cache' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'cmake_clean_first' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'cmake_force_configure' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'ament_cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'catkin_cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'diffusion' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.156s] DEBUG:colcon.colcon_core.verb:Building package 'diffusion' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/ur_grasp_driver/yc_ws/build/diffusion', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/ur_grasp_driver/yc_ws/install/diffusion', 'merge_install': False, 'path': '/home/ani/ur_grasp_driver/yc_ws/src/diffusion', 'symlink_install': True, 'test_result_base': None}
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'cmake_target' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'find_grasp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'find_grasp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/ur_grasp_driver/yc_ws/build/find_grasp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/ur_grasp_driver/yc_ws/install/find_grasp', 'merge_install': False, 'path': '/home/ani/ur_grasp_driver/yc_ws/src/find_grasp', 'symlink_install': True, 'test_result_base': None}
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'cmake_target' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'frames' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'frames' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/ur_grasp_driver/yc_ws/build/frames', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/ur_grasp_driver/yc_ws/install/frames', 'merge_install': False, 'path': '/home/ani/ur_grasp_driver/yc_ws/src/frames', 'symlink_install': True, 'test_result_base': None}
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_target' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.157s] Level 5:colcon.colcon_core.verb:set package 'my_ur_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.157s] DEBUG:colcon.colcon_core.verb:Building package 'my_ur_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/ur_grasp_driver/yc_ws/build/my_ur_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/ur_grasp_driver/yc_ws/install/my_ur_driver', 'merge_install': False, 'path': '/home/ani/ur_grasp_driver/yc_ws/src/my_ur_driver', 'symlink_install': True, 'test_result_base': None}
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.158s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/ur_grasp_driver/yc_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/ur_grasp_driver/yc_ws/install/serial', 'merge_install': False, 'path': '/home/ani/ur_grasp_driver/yc_ws/src/serial', 'symlink_install': True, 'test_result_base': None}
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_target' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_clean_first' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'cmake_force_configure' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'ament_cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_calibration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.158s] DEBUG:colcon.colcon_core.verb:Building package 'ur_calibration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/ur_grasp_driver/yc_ws/build/ur_calibration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/ur_grasp_driver/yc_ws/install/ur_calibration', 'merge_install': False, 'path': '/home/ani/ur_grasp_driver/yc_ws/src/ur_calibration', 'symlink_install': True, 'test_result_base': None}
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.158s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.159s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.159s] DEBUG:colcon.colcon_core.verb:Building package 'ur_simulation_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo', 'merge_install': False, 'path': '/home/ani/ur_grasp_driver/yc_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.159s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.159s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.159s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ani/ur_grasp_driver/yc_ws/src/diffusion' with build type 'ament_python'
+[0.160s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffusion', 'ament_prefix_path')
+[0.161s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/diffusion/share/diffusion/hook/ament_prefix_path.ps1'
+[0.161s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/ur_grasp_driver/yc_ws/install/diffusion/share/diffusion/hook/ament_prefix_path.dsv'
+[0.162s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/diffusion/share/diffusion/hook/ament_prefix_path.sh'
+[0.162s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.162s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.165s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ani/ur_grasp_driver/yc_ws/src/find_grasp' with build type 'ament_python'
+[0.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('find_grasp', 'ament_prefix_path')
+[0.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/find_grasp/share/find_grasp/hook/ament_prefix_path.ps1'
+[0.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/ur_grasp_driver/yc_ws/install/find_grasp/share/find_grasp/hook/ament_prefix_path.dsv'
+[0.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/find_grasp/share/find_grasp/hook/ament_prefix_path.sh'
+[0.166s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.166s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.168s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ani/ur_grasp_driver/yc_ws/src/frames' with build type 'ament_python'
+[0.168s] Level 1:colcon.colcon_core.shell:create_environment_hook('frames', 'ament_prefix_path')
+[0.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/frames/share/frames/hook/ament_prefix_path.ps1'
+[0.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/ur_grasp_driver/yc_ws/install/frames/share/frames/hook/ament_prefix_path.dsv'
+[0.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/frames/share/frames/hook/ament_prefix_path.sh'
+[0.169s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.169s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.171s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/ur_grasp_driver/yc_ws/src/my_ur_driver' with build type 'ament_cmake'
+[0.171s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/ur_grasp_driver/yc_ws/src/my_ur_driver'
+[0.171s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.171s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.173s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/ur_grasp_driver/yc_ws/src/serial' with build type 'ament_cmake'
+[0.173s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/ur_grasp_driver/yc_ws/src/serial'
+[0.174s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.174s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.176s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/ur_grasp_driver/yc_ws/src/ur_calibration' with build type 'ament_cmake'
+[0.176s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/ur_grasp_driver/yc_ws/src/ur_calibration'
+[0.176s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.176s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.178s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ani/ur_grasp_driver/yc_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo' with build type 'ament_cmake'
+[0.178s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ani/ur_grasp_driver/yc_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo'
+[0.178s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.178s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.318s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ani/ur_grasp_driver/yc_ws/src/diffusion'
+[0.319s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.319s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.458s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ani/ur_grasp_driver/yc_ws/src/find_grasp'
+[0.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.598s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ani/ur_grasp_driver/yc_ws/src/frames'
+[0.598s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.598s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/my_ur_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/my_ur_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/my_ur_driver
+[0.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/serial
+[0.609s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/ur_calibration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/ur_calibration
+[0.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo
+[0.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/serial
+[0.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --build /home/ani/ur_grasp_driver/yc_ws/build/serial -- -j12 -l12
+[0.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake /home/ani/ur_grasp_driver/yc_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo
+[0.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --build /home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo -- -j12 -l12
+[0.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --build /home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo -- -j12 -l12
+[0.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --install /home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo
+[1.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/frames': CONDA_PROMPT_MODIFIER=(pregrasp) PYTHONPATH=/home/ani/ur_grasp_driver/yc_ws/build/frames/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/ur_grasp_driver/yc_ws/install/frames/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/ur_grasp_driver/yc_ws/build/frames/build --no-deps symlink_data
+[1.018s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/diffusion': CONDA_PROMPT_MODIFIER=(pregrasp) PYTHONPATH=/home/ani/ur_grasp_driver/yc_ws/build/diffusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/ur_grasp_driver/yc_ws/install/diffusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/ur_grasp_driver/yc_ws/build/diffusion/build --no-deps symlink_data
+[1.081s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_simulation_gazebo)
+[1.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --install /home/ani/ur_grasp_driver/yc_ws/build/ur_simulation_gazebo
+[1.084s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo' for CMake module files
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo' for CMake config files
+[1.085s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_simulation_gazebo', 'cmake_prefix_path')
+[1.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.ps1'
+[1.086s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.dsv'
+[1.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.sh'
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/bin'
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/lib/pkgconfig/ur_simulation_gazebo.pc'
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/lib/python3.10/site-packages'
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/bin'
+[1.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.ps1'
+[1.089s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv'
+[1.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.sh'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.bash'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.zsh'
+[1.091s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/colcon-core/packages/ur_simulation_gazebo)
+[1.092s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_simulation_gazebo)
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo' for CMake module files
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo' for CMake config files
+[1.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_simulation_gazebo', 'cmake_prefix_path')
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.ps1'
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.dsv'
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.sh'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/bin'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/lib/pkgconfig/ur_simulation_gazebo.pc'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/lib/python3.10/site-packages'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/bin'
+[1.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.ps1'
+[1.096s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv'
+[1.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.sh'
+[1.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.bash'
+[1.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.zsh'
+[1.098s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ani/ur_grasp_driver/yc_ws/install/ur_simulation_gazebo/share/colcon-core/packages/ur_simulation_gazebo)
+[1.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/find_grasp': CONDA_PROMPT_MODIFIER=(pregrasp) PYTHONPATH=/home/ani/ur_grasp_driver/yc_ws/build/find_grasp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/ur_grasp_driver/yc_ws/install/find_grasp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/ur_grasp_driver/yc_ws/build/find_grasp/build --no-deps symlink_data
+[1.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/diffusion' returned '1': CONDA_PROMPT_MODIFIER=(pregrasp) PYTHONPATH=/home/ani/ur_grasp_driver/yc_ws/build/diffusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/ur_grasp_driver/yc_ws/install/diffusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/ur_grasp_driver/yc_ws/build/diffusion/build --no-deps symlink_data
+[1.422s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.422s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.422s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[1.422s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.434s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.434s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.434s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.445s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.445s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ani/ur_grasp_driver/yc_ws/install/local_setup.ps1'
+[1.446s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ani/ur_grasp_driver/yc_ws/install/_local_setup_util_ps1.py'
+[1.447s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ani/ur_grasp_driver/yc_ws/install/setup.ps1'
+[1.448s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ani/ur_grasp_driver/yc_ws/install/local_setup.sh'
+[1.448s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ani/ur_grasp_driver/yc_ws/install/_local_setup_util_sh.py'
+[1.449s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ani/ur_grasp_driver/yc_ws/install/setup.sh'
+[1.450s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ani/ur_grasp_driver/yc_ws/install/local_setup.bash'
+[1.450s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ani/ur_grasp_driver/yc_ws/install/setup.bash'
+[1.451s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ani/ur_grasp_driver/yc_ws/install/local_setup.zsh'
+[1.451s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ani/ur_grasp_driver/yc_ws/install/setup.zsh'

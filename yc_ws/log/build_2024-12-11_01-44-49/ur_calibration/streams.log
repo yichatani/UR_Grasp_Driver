@@ -1,0 +1,31 @@
+[0.433s] Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --build /home/ani/ur_grasp_driver/yc_ws/build/ur_calibration -- -j12 -l12
+[0.462s] [35m[1mConsolidate compiler generated dependencies of target calibration[0m
+[0.483s] [ 60%] Built target calibration
+[0.495s] [35m[1mConsolidate compiler generated dependencies of target calibration_correction[0m
+[0.515s] [100%] Built target calibration_correction
+[0.527s] Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --build /home/ani/ur_grasp_driver/yc_ws/build/ur_calibration -- -j12 -l12
+[0.527s] Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --install /home/ani/ur_grasp_driver/yc_ws/build/ur_calibration
+[0.532s] -- Install configuration: "RelWithDebInfo"
+[0.533s] -- Execute custom install script
+[0.533s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/lib/ur_calibration/calibration_correction
+[0.540s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/include/ur_calibration/calibration.hpp
+[0.546s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/include/ur_calibration/calibration_consumer.hpp
+[0.553s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/launch/calibration_correction.launch.py
+[0.559s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ament_index/resource_index/package_run_dependencies/ur_calibration
+[0.565s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ament_index/resource_index/parent_prefix_path/ur_calibration
+[0.571s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/environment/ament_prefix_path.sh
+[0.577s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/environment/ament_prefix_path.dsv
+[0.583s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/environment/path.sh
+[0.589s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/environment/path.dsv
+[0.595s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/local_setup.bash
+[0.601s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/local_setup.sh
+[0.607s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/local_setup.zsh
+[0.613s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/local_setup.dsv
+[0.619s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/package.dsv
+[0.626s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ament_index/resource_index/packages/ur_calibration
+[0.632s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.638s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.644s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig.cmake
+[0.650s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/cmake/ur_calibrationConfig-version.cmake
+[0.656s] -- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/ur_calibration/share/ur_calibration/package.xml
+[0.664s] Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/ur_calibration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(pregrasp) /usr/bin/cmake --install /home/ani/ur_grasp_driver/yc_ws/build/ur_calibration

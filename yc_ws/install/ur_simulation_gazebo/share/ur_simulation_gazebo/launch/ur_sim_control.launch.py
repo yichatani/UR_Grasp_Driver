@@ -1,0 +1,1 @@
+/home/ani/ur_grasp_driver/yc_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/launch/ur_sim_control.launch.py

@@ -1,0 +1,29 @@
+[0.824s] Invoking command in '/home/ani/ur_grasp_driver/yc_ws/build/diffusion': CONDA_PROMPT_MODIFIER=(pregrasp) PYTHONPATH=/home/ani/ur_grasp_driver/yc_ws/build/diffusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/ur_grasp_driver/yc_ws/install/diffusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/ur_grasp_driver/yc_ws/build/diffusion/build --no-deps symlink_data
+[1.048s] running develop
+[1.059s] Traceback (most recent call last):
+[1.059s]   File "/home/ani/ur_grasp_driver/yc_ws/build/diffusion/setup.py", line 5, in <module>
+[1.059s]     setup(
+[1.059s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 117, in setup
+[1.059s]     return distutils.core.setup(**attrs)
+[1.059s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 183, in setup
+[1.059s]     return run_commands(dist)
+[1.059s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 199, in run_commands
+[1.060s]     dist.run_commands()
+[1.060s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+[1.060s]     self.run_command(cmd)
+[1.060s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/dist.py", line 995, in run_command
+[1.060s]     super().run_command(command)
+[1.060s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 972, in run_command
+[1.060s]     cmd_obj.ensure_finalized()
+[1.060s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 111, in ensure_finalized
+[1.060s]     self.finalize_options()
+[1.060s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/command/develop.py", line 51, in finalize_options
+[1.060s]     easy_install.finalize_options(self)
+[1.060s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py", line 251, in finalize_options
+[1.060s]     'dist_fullname': self.distribution.get_fullname(),
+[1.060s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 267, in get_fullname
+[1.060s]     return _distribution_fullname(self.get_name(), self.get_version())
+[1.060s]   File "/home/ani/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 285, in _distribution_fullname
+[1.060s]     canonicalize_version(version, strip_trailing_zero=False),
+[1.060s] TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'
+[1.078s] Invoked command in '/home/ani/ur_grasp_driver/yc_ws/build/diffusion' returned '1': CONDA_PROMPT_MODIFIER=(pregrasp) PYTHONPATH=/home/ani/ur_grasp_driver/yc_ws/build/diffusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ani/ur_grasp_driver/yc_ws/install/diffusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ani/ur_grasp_driver/yc_ws/build/diffusion/build --no-deps symlink_data

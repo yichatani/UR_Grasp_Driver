@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target serial[0m
+[100%] Built target serial
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/include/serial/impl/unix.h
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/include/serial/impl/win.h
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/include/serial/serial.h
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/include/serial/v8stdint.h
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/environment/library_path.sh
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/environment/library_path.dsv
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/environment/path.sh
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/environment/path.dsv
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/local_setup.bash
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/local_setup.sh
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/local_setup.zsh
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/local_setup.dsv
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/package.dsv
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/ament_index/resource_index/packages/serial
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/cmake/serialConfig.cmake
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+-- Symlinking: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/package.xml
+-- Installing: /home/ani/ur_grasp_driver/yc_ws/install/serial/lib/libserial.a
+-- Installing: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/cmake/export_serialExport.cmake
+-- Installing: /home/ani/ur_grasp_driver/yc_ws/install/serial/share/serial/cmake/export_serialExport-noconfig.cmake
