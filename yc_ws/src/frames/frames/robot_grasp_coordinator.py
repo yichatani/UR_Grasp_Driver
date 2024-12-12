@@ -127,7 +127,7 @@ class DataCollector:
             'joint_position': current_joint_pos,
             'joint_velocity': current_joint_vel
         }
-        #####################   need add gripper_state
+        ##############################################   need add gripper_state
         
         # handle vision
         vision_data = {}
@@ -232,6 +232,7 @@ class RobotGraspCoordinator(Node):
         self.gripper_controller = None
         self.grasp_detector = None
 
+
         # Define the home position for the robot (replace with your desiredv robot's home pose)
         home_pose = [-12.52, -98.88, 86.35, -84.11, -89.97, -18.62]
         self.home_pose_in_rad = to_radians(home_pose)  # Convert degrees to radians
@@ -264,6 +265,9 @@ class RobotGraspCoordinator(Node):
         self.grasp_thread = threading.Thread(target=self.run_grasp_loop)
         #self.grasp_thread.daemon = True  # Daemon thread to not block on shutdown
         self.grasp_thread.start()
+
+        self.record = DataCollector(self, output_dir="./collected_data",auto_episode=True)
+        self.record_thread = threading.Thread(target=self.record.run)
 
         # Start the key press listener in a separate thread for graceful shutdown
         self.key_listener_thread = threading.Thread(target=self.listen_for_exit_key)
@@ -375,8 +379,7 @@ class RobotGraspCoordinator(Node):
             if self.executionType == "Execute":
                 
                 ### Begin record data
-                self.record = DataCollector(self, output_dir="./collected_data", episode_n = 0,)
-                self.record_thread = threading.Thread(target=self.record.run)
+
                 self.record_thread.start()
                 ###
                 self.move_to_grasp()  
@@ -390,7 +393,7 @@ class RobotGraspCoordinator(Node):
                 ### Stop record data
                 self.record.stop()
                 if self.record_thread.is_alive():
-                    self.record_thread.join(timeout=5)
+                    self.record_thread.join(timeout=10)
                 self.record.end_episode()
                 ###
 

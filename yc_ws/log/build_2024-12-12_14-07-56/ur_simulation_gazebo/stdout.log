@@ -1,0 +1,58 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/artc/miniconda3/envs/ros2_any/bin/python3 (found version "3.10.14") found components: Interpreter 
+-- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonInterp: /home/artc/miniconda3/envs/ros2_any/bin/python3 (found suitable version "3.10.14", minimum required is "3.6") 
+-- Found PythonLibs: /home/artc/miniconda3/envs/ros2_any/lib/libpython3.10.so (found suitable version "3.10.14", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /home/artc/miniconda3/envs/ros2_any/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /home/artc/miniconda3/envs/ros2_any/include/python3.10
+-- Using PYTHON_LIBRARIES: /home/artc/miniconda3/envs/ros2_any/lib/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_cmake_pytest: 1.3.10 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/artc/UR_Grasp_Driver/yc_ws/build/ur_simulation_gazebo
+-- Install configuration: ""
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers_with_gripper.yaml
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/gazebo_ros2_control.yaml
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py
+-- Up-to-date: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch
+-- Up-to-date: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py
+-- Up-to-date: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py
+-- Up-to-date: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config
+-- Up-to-date: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml
+-- Up-to-date: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers_with_gripper.yaml
+-- Up-to-date: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/gazebo_ros2_control.yaml
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds/ur_empty.world
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake
+-- Installing: /home/artc/UR_Grasp_Driver/yc_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml

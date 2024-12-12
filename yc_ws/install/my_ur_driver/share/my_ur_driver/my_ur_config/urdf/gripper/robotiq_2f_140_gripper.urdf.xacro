@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="robotiq_gripper">
+    <!-- parameters -->
+    <xacro:arg name="use_fake_hardware" default="true" />
+
+    <!-- Import macros -->
+    <xacro:include filename="$(find my_ur_driver)/my_ur_config/urdf/gripper/robotiq_2f_140_macro.urdf.xacro" />
+
+    <!-- Attach gripper to the UR10e's tool0 link -->
+    <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="tool0" use_fake_hardware="$(arg use_fake_hardware)">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:robotiq_gripper>
+</robot>

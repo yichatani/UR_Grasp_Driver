@@ -9,7 +9,7 @@ source install/setup.bash
 
 ## Launching the UR10e:
 ```bash
-ros2 launch my_ur_driver my.launch.py  # Modify the code to adjust your ur type and ip address
+ros2 launch my_ur_driver my_ur.launch.py  # Modify the code to adjust your ur type and ip address
 ```
 
 ## Launching the Moveit:

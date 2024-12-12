@@ -1,3 +1,5 @@
+from queue import Queue
+import time
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -12,6 +14,8 @@ class ImageSubscriber():
     def __init__(self, coordinator):
 
         self.coordinator = coordinator
+        self.data_queue = Queue()
+        self.data_queue2 = Queue()
 
         # Subscribers for color and depth images
         self.color_subscriber = Subscriber(self.coordinator, Image, '/Realsense_D455/color/image_raw')
@@ -37,7 +41,16 @@ class ImageSubscriber():
         # Convert color and depth images using CvBridge
         try:
             self.color_image = self.br.imgmsg_to_cv2(color_msg, desired_encoding='bgr8')
+            timestamp = time.time()
+            self.data_queue.put(('rgb', self.color_image, timestamp))
             self.depth_image = self.br.imgmsg_to_cv2(depth_msg, desired_encoding='passthrough')
+            timestamp = time.time()
+            self.data_queue.put(('depth', self.depth_image, timestamp))
+
+                    # Enqueue the synchronized image pair
+            #self.data_queue.put((self.color_image, self.depth_image, timestamp))
+        
+
             #self.coordinator.get_logger().info('Images successfully converted.')
         except Exception as e:
             self.get_logger().error(f'Failed to process images: {e}')
@@ -82,8 +95,6 @@ class ImageSubscriber():
 
     def get_current_images(self):
         """
-        Retrieves the latest color and depth images with thread safety.
-
         Returns:
             tuple: (color_image, depth_image) as NumPy arrays or (None, None) if not available.
         """
@@ -92,7 +103,7 @@ class ImageSubscriber():
         #self.process_and_visualize_point_cloud()
 
         return color, depth
-
+    
 
 
 

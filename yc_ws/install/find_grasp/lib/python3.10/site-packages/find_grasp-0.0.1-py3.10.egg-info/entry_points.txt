@@ -1,0 +1,3 @@
+[console_scripts]
+inference = find_grasp.inference:main
+

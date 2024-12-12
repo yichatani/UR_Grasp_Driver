@@ -1,0 +1,107 @@
+controller_names:
+  - scaled_joint_trajectory_controller
+  - joint_trajectory_controller
+
+
+scaled_joint_trajectory_controller:
+  action_ns: follow_joint_trajectory
+  type: FollowJointTrajectory
+  default: true
+  joints:
+    - shoulder_pan_joint
+    - shoulder_lift_joint
+    - elbow_joint
+    - wrist_1_joint
+    - wrist_2_joint
+    - wrist_3_joint
+
+
+joint_trajectory_controller:
+  action_ns: follow_joint_trajectory
+  type: FollowJointTrajectory
+  default: false
+  joints:
+    - shoulder_pan_joint
+    - shoulder_lift_joint
+    - elbow_joint
+    - wrist_1_joint
+    - wrist_2_joint
+    - wrist_3_joint
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# controller_names:
+#   - scaled_joint_trajectory_controller
+#   - joint_trajectory_controller
+#   - robotiq_gripper_controller
+#   - joint_state_broadcaster
+#   - robotiq_activation_controller
+
+# scaled_joint_trajectory_controller:
+#   action_ns: follow_joint_trajectory
+#   type: FollowJointTrajectory
+#   default: true
+#   joints:
+#     - shoulder_pan_joint
+#     - shoulder_lift_joint
+#     - elbow_joint
+#     - wrist_1_joint
+#     - wrist_2_joint
+#     - wrist_3_joint
+
+# joint_trajectory_controller:
+#   action_ns: follow_joint_trajectory
+#   type: FollowJointTrajectory
+#   default: false
+#   joints:
+#     - shoulder_pan_joint
+#     - shoulder_lift_joint
+#     - elbow_joint
+#     - wrist_1_joint
+#     - wrist_2_joint
+#     - wrist_3_joint
+
+# robotiq_gripper_controller:
+#   action_ns: follow_joint_trajectory
+#   type: GripperActionController
+#   default: false
+#   joints:
+#     # - robotiq_2f_140_left_finger_joint
+#     # - robotiq_2f_140_right_finger_joint
+#       - finger_joint
+#   ros__parameters:
+#     joint: finger_joint  # 'finger_joint' is the base joint name in my URDF for the gripper
+#     use_effort_interface: true
+#     use_speed_interface: true
+#     goal_tolerance: 0.01
+#     stalled_velocity_tolerance: 0.001
+#     max_force: 40  # Max force in Newtons
+
+# robotiq_activation_controller:
+#   action_ns: follow_joint_trajectory
+#   type: robotiq_controllers/RobotiqActivationController
+#   default: false
+
+# controller_manager:
+#   ros__parameters:
+#     update_rate: 500  # Hz
+#     joint_state_broadcaster:
+#       type: joint_state_broadcaster/JointStateBroadcaster

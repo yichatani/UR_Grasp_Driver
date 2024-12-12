@@ -1,0 +1,58 @@
+[2.067s] Invoking command in '/home/artc/UR_Grasp_Driver/yc_ws/src/diffusion': CONDA_PROMPT_MODIFIER=(ros2_any) PYTHONPATH=/home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/diffusion build --build-base /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build install --record /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/install.log --single-version-externally-managed install_data
+[2.574s] running egg_info
+[2.576s] creating ../../build/diffusion/diffusion.egg-info
+[2.577s] writing ../../build/diffusion/diffusion.egg-info/PKG-INFO
+[2.577s] writing dependency_links to ../../build/diffusion/diffusion.egg-info/dependency_links.txt
+[2.577s] writing entry points to ../../build/diffusion/diffusion.egg-info/entry_points.txt
+[2.577s] writing requirements to ../../build/diffusion/diffusion.egg-info/requires.txt
+[2.577s] writing top-level names to ../../build/diffusion/diffusion.egg-info/top_level.txt
+[2.577s] writing manifest file '../../build/diffusion/diffusion.egg-info/SOURCES.txt'
+[2.580s] reading manifest file '../../build/diffusion/diffusion.egg-info/SOURCES.txt'
+[2.582s] writing manifest file '../../build/diffusion/diffusion.egg-info/SOURCES.txt'
+[2.582s] running build
+[2.582s] running build_py
+[2.582s] creating /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build
+[2.582s] creating /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib
+[2.582s] creating /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion
+[2.583s] copying diffusion/__init__.py -> /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion
+[2.583s] copying diffusion/load_numpy.py -> /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion
+[2.583s] copying diffusion/pre_pointcloud.py -> /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion
+[2.583s] copying diffusion/rrt_star_path.py -> /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion
+[2.583s] copying diffusion/record_numpy.py -> /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion
+[2.584s] copying diffusion/rrt_path.py -> /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion
+[2.584s] copying diffusion/6d_rrt_star.py -> /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion
+[2.584s] running install
+[2.584s] running install_lib
+[2.586s] creating /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion
+[2.586s] copying /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion/__init__.py -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion
+[2.586s] copying /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion/load_numpy.py -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion
+[2.587s] copying /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion/pre_pointcloud.py -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion
+[2.587s] copying /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion/rrt_star_path.py -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion
+[2.587s] copying /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion/record_numpy.py -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion
+[2.587s] copying /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion/rrt_path.py -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion
+[2.587s] copying /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build/lib/diffusion/6d_rrt_star.py -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion
+[2.588s] byte-compiling /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion/__init__.py to __init__.cpython-310.pyc
+[2.589s] byte-compiling /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion/load_numpy.py to load_numpy.cpython-310.pyc
+[2.591s] byte-compiling /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion/pre_pointcloud.py to pre_pointcloud.cpython-310.pyc
+[2.592s] byte-compiling /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion/rrt_star_path.py to rrt_star_path.cpython-310.pyc
+[2.595s] byte-compiling /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion/record_numpy.py to record_numpy.cpython-310.pyc
+[2.597s] byte-compiling /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion/rrt_path.py to rrt_path.cpython-310.pyc
+[2.598s] byte-compiling /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion/6d_rrt_star.py to 6d_rrt_star.cpython-310.pyc
+[2.601s] running install_data
+[2.601s] creating /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/share/ament_index
+[2.601s] creating /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/share/ament_index/resource_index
+[2.602s] creating /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/share/ament_index/resource_index/packages
+[2.602s] copying resource/diffusion -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/share/ament_index/resource_index/packages
+[2.603s] copying package.xml -> /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/share/diffusion
+[2.603s] creating /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/share/diffusion/launch
+[2.603s] running install_egg_info
+[2.605s] Copying ../../build/diffusion/diffusion.egg-info to /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages/diffusion-0.0.0-py3.10.egg-info
+[2.607s] running install_scripts
+[2.647s] Installing 6d_rrt_star script to /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/diffusion
+[2.648s] Installing load_numpy script to /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/diffusion
+[2.648s] Installing pre_pointcloud script to /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/diffusion
+[2.648s] Installing record_numpy script to /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/diffusion
+[2.648s] Installing rrt_path script to /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/diffusion
+[2.648s] Installing rrt_star_path script to /home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/diffusion
+[2.649s] writing list of installed files to '/home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/install.log'
+[2.695s] Invoked command in '/home/artc/UR_Grasp_Driver/yc_ws/src/diffusion' returned '0': CONDA_PROMPT_MODIFIER=(ros2_any) PYTHONPATH=/home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/artc/UR_Grasp_Driver/yc_ws/install/diffusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/diffusion build --build-base /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/build install --record /home/artc/UR_Grasp_Driver/yc_ws/build/diffusion/install.log --single-version-externally-managed install_data
