@@ -1,8 +1,0 @@
-[console_scripts]
-camera_controller = frames.camera_controller:main
-grasp_detector = frames.grasp_detector:main
-grasp_pose_transformer = frames.grasp_pose_transformer:main
-gripper_controller = frames.gripper_controller:main
-myframe = frames.myframe:main
-robot_grasp_coordinator = frames.robot_grasp_coordinator:main
-

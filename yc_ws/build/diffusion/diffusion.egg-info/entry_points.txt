@@ -1,8 +1,0 @@
-[console_scripts]
-6d_rrt_star = diffusion.6d_rrt_star:main
-load_numpy = diffusion.load_numpy:main
-pre_pointcloud = diffusion.pre_pointcloud:main
-record_numpy = diffusion.record_numpy:main
-rrt_path = diffusion.rrt_path:main
-rrt_star_path = diffusion.rrt_star_path:main
-

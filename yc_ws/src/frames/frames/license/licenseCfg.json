@@ -1,0 +1,14 @@
+{
+    "version": "3.1.0",
+    "feature_id": "12382330038541122254",
+    "public_key": "AbdelrahmanAlordy.public_key",
+    "signature": "AbdelrahmanAlordy.signature",
+    "license": "AbdelrahmanAlordy.lic",
+    "toolbox": [
+        {
+            "name": "Basic",
+            "type": "PERMANENT",
+            "data": ""
+        }
+    ]
+}
