@@ -1,13 +1,15 @@
 # Portable UR_Grasp_Driver
 
-The workspace is a nearly complete robot arm control system based on vision. It contains packages like Moveit and RTDE and some self-built frameworks to better handle ros2. 
 
-It is built under Ros2 humble.
-
-Hopefully, it can help to build a workspace faster, rather than build from the beginning every time. 
-
-The following are some commands you need. 
-
+## To build the workspace
+```bash
+sudo apt install ros-humble-ur-robot-driver
+sudo apt install ros-humble-moveit
+```
+```bash
+cd UR_Grasp_Driver/yc_ws
+colcon build
+```
 
 
 # Commands
